@@ -1,0 +1,296 @@
+
+.news.col-lg-4 {
+  background-color: #813531;
+  color: white;
+}
+
+
+/***************************uPDATES AND NEWS ***************/
+
+
+
+/************************ cards ***********************/
+.card{
+  /* background-color: #813531; */
+  /* background-color: #fff; */
+  background-color:#e1faee;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: .5rem;
+}
+div.media .mr-3 {
+  margin-right: .1rem!important;
+}
+
+div.media-body a:link {
+  /* color:  #bfbfbf; */
+  color: #000;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+div.media-body a:visited {
+  color: #000;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+div.media-body a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+div.media-body a:active {
+  color: green;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+
+div.card-deck hr {
+  margin-top: .1rem;
+}
+div.index_updates.col-lg-4, .testimonies {
+  width: 100%;
+  height: 10%;
+  background: #813531;
+  color: #bfbfbf;
+  padding: 5px 1px 5px 0px;
+  margin: 2px 0px 0px 2px;
+}
+
+div.apply_now .w-100 {
+  margin: 5px 0px 5px 2px;
+  width: 100%!important;
+  height: 100px;
+}
+div.index_campus_life{
+  width: 100%;
+  height: 2rem;
+  background: #813531;
+  color: #bfbfbf;
+  padding: 5px 1px 5px 0px;
+  margin: 2px 0px 0px 2px;
+}
+/*
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0rem;
+  font-weight: 500;
+  line-height: 1.2;
+
+} */
+
+
+
+@media (min-width: 320px ){
+  /*****slide section **********************/
+
+
+  .slide-row h2{
+    font-size: 1em;
+    margin-bottom: 0rem;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1;
+   }
+
+  
+
+
+  /********updates /NEWS ********************/
+  .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;   
+    height: 150px;
+    overflow: auto;     
+  }
+
+  .img-thumbnail {
+    padding: .25rem;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    max-width: 15%;
+    height: auto;
+  }
+
+  div.media-body a:hover {
+    color:  #034b22; 
+    text-decoration: underline;
+    background-color: transparent;
+  }
+
+  div.media-body[_ngcontent-cyo-c1] a[_ngcontent-cyo-c1]:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+
+  /******************************APPLY**************/
+  div.cols{
+    background: #813531;
+    color:#bfbfbf;
+    margin-top: 2px;
+    margin-bottom:2px;
+    margin-right: 15px;
+    margin-left: 15px;
+    }
+}
+
+
+/****************************** min-width: 576px *****************************************************/
+@media (min-width: 576px){
+  
+   h1.heading1 {
+    font-size: 1.3em;
+  }
+
+  .slide-row h2{
+    font-size: 1em;
+    margin-bottom: 0rem;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1;
+   }
+
+   .card-deck {
+    flex-flow: column;
+    margin-right: -15px;
+    margin-left: -15px;
+    }
+    
+   /*
+  .card-deck {
+  -ms-flex-flow: column;
+  flex-flow: column;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+  }
+
+  .card-deck .card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-right: 15px;
+  margin-bottom: 0;
+  margin-left: 0px;
+  height: 500px;
+  overflow: auto;
+  }
+
+  .card-group {
+    flex-flow: column;
+     margin-bottom: 10px; 
+}  */
+  .card-img-top {
+  width: 20%;
+  }
+  .img-thumbnail {
+  max-width: 15%;
+  height: auto;
+  }
+
+  h2{
+  margin-block-start: 0em;
+  }
+}
+
+@media (min-width: 768px){
+  .card-deck {
+  flex-flow: column;
+  margin-right: -15px;
+  margin-left: -15px;
+  }
+
+  .img-thumbnail {
+  max-width: 10%;
+  height: auto;
+  }
+}
+
+@media (min-width: 992px){
+
+  h1.heading1 {
+    font-size: 1.5em;
+  }
+  .card-deck {
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    }
+    .card-deck .card {
+      height: 300px;
+      overflow: auto;
+      }
+
+    .card-body {
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      padding: .5rem;
+      max-height:300px;
+    }
+  /*
+  .card-deck {
+  flex-flow: row;
+  margin-right: 0px;
+  margin-left: 0px;
+  }
+  .card-group {
+    flex-flow: row;
+    margin-bottom: 10px; 
+} */
+    
+  .img-thumbnail {
+  padding: .1rem;
+  max-width: 25%;
+  height: auto;
+  }
+ /* div.col-12-edit{
+    padding-left:0px;
+    padding-right: 0px;
+  }*/
+/**************************Apply *******************/
+
+  div.cols{
+    background: #813531;
+    color:#bfbfbf;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom:0px;
+    margin-right: 0px;
+  
+    flex: 0 0  30.555555%;
+    max-width: 30.555555%;  
+    font-size: 1.5rem; 
+  }
+
+  div.cols-lg-4-edit{
+    margin-right: 15px;
+   
+  }/*
+  div.cols-right-margin{
+    margin-right: 20px;
+  }
+  
+*/
+
+  a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+}

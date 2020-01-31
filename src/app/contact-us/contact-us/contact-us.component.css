@@ -1,0 +1,38 @@
+.address-fonts{
+    font-family: cursive;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    margin-bottom: 20px;
+}
+
+
+@media(min-width:320px){
+    iframe.google-mapslink{
+        width:100%;
+        height:9rem;
+    }
+}
+
+@media(min-width: 576px){
+    iframe.google-mapslink{
+        width:100%;
+        height:15rem;
+    }
+}
+
+@media(min-width:768px){
+    iframe.google-mapslink{
+        width:100%;
+       height:21rem;
+    }
+}
+
+@media(min-width:992px){
+    iframe.google-mapslink{
+        width:100%;
+        height:22rem;
+    }
+}
+
+
+
