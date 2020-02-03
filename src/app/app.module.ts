@@ -11,6 +11,7 @@ import { AboutUsModule } from './about-us/about-us.module';
 import { ProgrammeModule } from './programme/programme.module';
 import { UserModule } from './user/user.module';
 import { ContactUsModule } from './contact-us/contact-us.module';
+import { QuestionComponent } from './question/question.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ContactUsModule } from './contact-us/contact-us.module';
     HomeComponent,
     PageNotFoundComponent,
     FooterComponentComponent,
+    QuestionComponent,
         
   ],
   imports: [
