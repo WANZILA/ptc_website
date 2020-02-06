@@ -100,7 +100,7 @@ div.index_campus_life{
    }
 
   h1.heading1 {
-    font-size: .9rem;
+    font-size: .8rem;
 	}
 
 
@@ -154,7 +154,7 @@ div.index_campus_life{
 @media (min-width: 576px) and (max-width: 767.98px){
   
    h1.heading1 {
-    font-size: 1.3em;
+    font-size: .9em;
   }
 
   .slide-row h2{
@@ -216,6 +216,10 @@ div.index_campus_life{
 /*************************************************768px******************************/
 
 @media (min-width: 768px) and (max-width: 991.98px){
+    h1.heading1 {
+    font-size: 1rem;
+	}
+  
   .card-deck {
   flex-flow: column;
   margin-right: -15px;
@@ -231,7 +235,7 @@ div.index_campus_life{
 @media (min-width: 992px)and (max-width: 1199.98px){
 
   h1.heading1 {
-    font-size: 1.5em;
+    font-size: 1.1em;
   }
   .card-deck {
     flex-flow: row wrap;
@@ -301,6 +305,76 @@ div.index_campus_life{
 }
 
 @media (min-width:1200px){
-	
+	  h1.heading1 {
+    font-size: 1.2rem;
+	}
+	h1.heading1 {
+    font-size: 1.1em;
+  }
+  .card-deck {
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    }
+    .card-deck .card {
+      height: 300px;
+      overflow: auto;
+      }
+
+    .card-body {
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      padding: .5rem;
+      max-height:300px;
+    }
+  /*
+  .card-deck {
+  flex-flow: row;
+  margin-right: 0px;
+  margin-left: 0px;
+  }
+  .card-group {
+    flex-flow: row;
+    margin-bottom: 10px; 
+} */
+    
+  .img-thumbnail {
+  padding: .1rem;
+  max-width: 25%;
+  height: auto;
+  }
+ /* div.col-12-edit{
+    padding-left:0px;
+    padding-right: 0px;
+  }*/
+/**************************Apply *******************/
+
+  div.cols{
+    background: #813531;
+    color:#bfbfbf;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom:0px;
+    margin-right: 0px;
+  
+    flex: 0 0  30.555555%;
+    max-width: 30.555555%;  
+    font-size: 1.5rem; 
+  }
+
+  div.cols-lg-4-edit{
+    margin-right: 15px;
+   
+  }/*
+  div.cols-right-margin{
+    margin-right: 20px;
+  }
+  
+*/
+
+  a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+    color: #fff;
+    text-decoration: underline;
+  }
 }
 
