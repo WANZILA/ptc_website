@@ -206,7 +206,20 @@ div.index_campus_life{
   max-width: 15%;
   height: auto;
   }
-
+  
+	/******************Apply ************/
+	  div.cols{
+    background: #813531;
+    color:#bfbfbf;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom:0px;
+    margin-right: 0px;  
+    flex: 0 0  30.555555%;
+    max-width: 30.555555%;  
+    font-size: 1rem; 
+  }
+	
   h2{
   margin-block-start: 0em;
   }
@@ -229,6 +242,20 @@ div.index_campus_life{
   .img-thumbnail {
   max-width: 10%;
   height: auto;
+  }
+  
+  /************Apply *******************/
+    div.cols{
+    background: #813531;
+    color:#bfbfbf;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom:0px;
+    margin-right: 0px;
+  
+    flex: 0 0  30.555555%;
+    max-width: 30.555555%;  
+    font-size: 1.5rem; 
   }
 }
 
@@ -281,8 +308,7 @@ div.index_campus_life{
     margin-top: 10px;
     margin-left: 15px;
     margin-bottom:0px;
-    margin-right: 0px;
-  
+    margin-right: 0px;  
     flex: 0 0  30.555555%;
     max-width: 30.555555%;  
     font-size: 1.5rem; 

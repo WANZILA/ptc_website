@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ProgrammeRoutingModule } from './programme-routing.module';
+import { ProgrammeComponent } from './programme/programme.component';
 import { ProgrammeDiplomaComponent } from './programme-diploma/programme-diploma.component';
 import { ProgrammeCertificateComponent } from './programme-certificate/programme-certificate.component';
 import { ProgrammeDiplomaBibleTheologyComponent } from './programme-diploma-bible-theology/programme-diploma-bible-theology.component';
@@ -10,13 +11,13 @@ import { ProgrammeDiplomaAgriBusinessComponent } from './programme-diploma-agri-
 import { ProgrammeDiplomaSocailDevComponent } from './programme-diploma-socail-dev/programme-diploma-socail-dev.component';
 import { ProgrammeDiplomaChildDevComponent } from './programme-diploma-child-dev/programme-diploma-child-dev.component';
 import { ProgrammeDiplomaCounselingAndGuidanceComponent } from './programme-diploma-counseling-and-guidance/programme-diploma-counseling-and-guidance.component';
-import { ProgrammeComponent } from './programme/programme.component';
 import { AllCoursesComponent } from './all-courses/all-courses.component';
 import { ProgrammeTuitionComponent } from './programme-tuition/programme-tuition.component';
 
 
 @NgModule({
   declarations: [
+	ProgrammeComponent,
     ProgrammeDiplomaComponent, 
     ProgrammeCertificateComponent, 
     ProgrammeDiplomaBibleTheologyComponent, 
@@ -25,7 +26,6 @@ import { ProgrammeTuitionComponent } from './programme-tuition/programme-tuition
     ProgrammeDiplomaSocailDevComponent, 
     ProgrammeDiplomaChildDevComponent, 
     ProgrammeDiplomaCounselingAndGuidanceComponent, 
-    ProgrammeComponent, 
     AllCoursesComponent, 
     ProgrammeTuitionComponent
   ],

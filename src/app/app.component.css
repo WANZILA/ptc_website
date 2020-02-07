@@ -109,7 +109,7 @@ a.grad {
   header#header-edit {
     margin-bottom: 10px;
     }
-       
+     /*  
     div#contact-links {
       border: none;
       background-color:none;
@@ -119,7 +119,7 @@ a.grad {
       box-shadow: none;
       height: 2.2rem;
     }
-
+*/
     div#head-links {
       display: inline-block;
       height: 35px;
@@ -233,7 +233,8 @@ a.grad {
     }
 
     .container-fluid{
-      background:#63d1a7;
+      /*background:#63d1a7;*/
+	  background:#e1faee;
     }
  
 }
@@ -247,7 +248,7 @@ a.grad {
     header#header-edit {
       margin-bottom: 20px;
       }
-         
+     /*    
     div#contact-links {
       border: #000 solid 1px;
       background-color:#813531;
@@ -258,6 +259,7 @@ a.grad {
       margin-bottom: 0px;
       box-shadow: none;
     }
+	*/
     
     div#head-links {
       display: inline-block;
@@ -404,10 +406,12 @@ a.grad {
      /* margin-right: auto;
       margin-left: auto;*/
      }
+	 /*
     div#contact-links {
       margin-bottom: 0em;
-  
      }
+	 */
+	 
      div#head-links {
       display: inline-block;
       height: 29px;
@@ -480,10 +484,10 @@ a.grad {
      /* margin-right: auto;
       margin-left: auto;*/
      }
-    div#contact-links {
+    /*div#contact-links {
       margin-bottom: 0em;
   
-     }
+     }*/
      div#head-links {
       display: inline-block;
       height: 29px;

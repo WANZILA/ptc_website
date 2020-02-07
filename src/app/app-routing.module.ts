@@ -11,6 +11,12 @@ const routes: Routes = [
     path: 'home', component: HomeComponent
   },
   {
+	  path:'product',
+	  loadChildren:'./programme/programme.module#ProgrammeModule'
+	  
+	 /*  loadChildren: './products/product.module#ProductModule'},*/
+  },
+  {
     path: '' , redirectTo: 'home', pathMatch:'full'
   },
   {
