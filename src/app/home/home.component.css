@@ -85,7 +85,17 @@ div.index_campus_life{
 
 } */
 
+/*******apply links ******/
+span a.apply_links {
+    color: #bfbfbf;
+    text-decoration: none;
+    background-color: transparent;
+}
 
+span a.apply_links:hover {
+	color:#fff;
+    text-decoration: underline;
+}
 
 @media (max-width: 577.98px ){
   /*****slide section **********************/

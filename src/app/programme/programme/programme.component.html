@@ -12,9 +12,9 @@
                   studied both in and outside Uganda and so they bring the latest
                   information and experince directly to the lecture rooms. 
                   <br>Whether you are studying for Certificate, or Diploma, you will be 
-                               able to bring change in your community and church setting, 
-                               through the acquired skills and knowledge from PTC. Our <a href="#">Tuition</a> is
-                                cost friendly .                    
+                      able to bring change in your community and church setting, 
+                      through the acquired skills and knowledge from PTC. Our <a class="link" [routerLink]="['/programme-tuition']">Tuition</a> is
+                      cost friendly .                    
                </p>
             
             </div>
@@ -23,23 +23,12 @@
         </div>
     </div>
   </section>
-
+  
 
 <div class="row no-gutters" style="margin-top:20px;">
     <div class="col-12">
         <div class="row ">
-            <main class="col-lg-9">
-                <section class="row rowEdit">
-                    <div class="col-12" >
-                        <div class="inner-cols">
-						
-                            <router-outlet></router-outlet> 
-                         </div>               
-                    </div>
-                </section>
-               
-            </main>
-            <aside class="col-lg-3">
+			<!--<aside class="col-lg-3">
                 <section class="row rowEdit" >
                     <div class="col-12">
                         <div class="inner-cols">
@@ -48,6 +37,37 @@
                     </div>
                  </section>
             </aside>
+			-->
+			<aside class="col-lg-3">
+				<div class="list-group" id="list-tab" role="tablist">
+					<a class="list-group-item list-group-item-action active" id ="list-home-list" data-toggle="list" [routerLink]="['programme-diploma']"
+					   role="tab" aria-controls="diploma">Diploma</a>
+					<a class="list-group-item list-group-item-action" id="list-certificate-list" data-toggle="list" [routerLink]="['programme-certificate']"
+					   role="tab" aria-controls="certificate">Certificate</a>
+				
+				</div>
+
+			</aside>
+            <main class="col-lg-9">
+                <section class="row rowEdit">
+                    <div class="col-12" >
+                       <!-- <div class="inner-cols">
+						
+                            <router-outlet></router-outlet> 
+                         </div>     -->
+						<div class="tab-content" id="nav-tab-content">
+							<div class="tab-pan fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+								<router-outlet></router-outlet>
+							</div>
+							<div class="tab-pane fade" id="list-certificate" role="tabpanel" aria-labelledby="list-certificate-list">
+								<router-outlet></router-outlet>
+							</div>
+						</div>
+                    </div>
+                </section>
+               
+            </main>
+            
         </div>     
 
     </div>
