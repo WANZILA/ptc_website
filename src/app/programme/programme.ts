@@ -1,6 +1,6 @@
 export interface Programme{
 	id: number,
-	programme_name: string
+	programme: string
 }
 
 export interface ProgrammeResolved{
