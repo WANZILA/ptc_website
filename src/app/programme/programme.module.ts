@@ -17,7 +17,7 @@ import { ProgrammeTuitionComponent } from './programme-tuition/programme-tuition
 
 @NgModule({
   declarations: [
-	ProgrammeComponent,
+	  ProgrammeComponent,
     ProgrammeDiplomaComponent, 
     ProgrammeCertificateComponent, 
     ProgrammeDiplomaBibleTheologyComponent, 

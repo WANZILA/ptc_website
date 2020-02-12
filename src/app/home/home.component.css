@@ -10,11 +10,7 @@
 
 
 /************************ cards ***********************/
-.card{
-  /* background-color: #813531; */
-  /* background-color: #fff; */
-  background-color:#e1faee;
-}
+
 
 .card-body {
   -ms-flex: 1 1 auto;

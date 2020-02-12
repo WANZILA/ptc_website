@@ -71,6 +71,18 @@
                     </div>
                 </div>
               </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"   id="serviceDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services 
+                </a>
+                <div class="dropdown-menu " aria-labelledby="serviceDropdown">
+                    <div classs="list-group"  >
+                        <a  class="dropdown-item" role="button"  [routerLink]="['/library']">Library</a>
+                    </div>
+                </div>
+              </li>
+
               <li class="nav-item">
                 <a class="nav-link" [routerLink]="['/contact-us']" routerLinkActive="active">Contact</a>
               </li>

@@ -12,6 +12,11 @@ import { ProgrammeModule } from './programme/programme.module';
 import { UserModule } from './user/user.module';
 import { ContactUsModule } from './contact-us/contact-us.module';
 import { QuestionComponent } from './question/question.component';
+//import { StudentDashboardRoutingModule } from './student-dashboard/student-dashboard-routing.module';
+import { StudentDashboardModule } from './student-dashboard/student-dashboard.module';
+import { LibraryComponent } from './college-servies/library/library.component'
+import { CollegeServicesModule } from './college-services/college-services.module';
+
 
 @NgModule({
   declarations: [
@@ -20,16 +25,19 @@ import { QuestionComponent } from './question/question.component';
     PageNotFoundComponent,
     FooterComponentComponent,
     QuestionComponent,
+    LibraryComponent,
         
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AboutUsModule,
+    StudentDashboardModule,
     ProgrammeModule,
+    CollegeServicesModule,    
     ContactUsModule,
     UserModule,    
-    AppRoutingModule,
+    AppRoutingModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

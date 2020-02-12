@@ -10,12 +10,12 @@ const routes: Routes = [
   {
     path: 'home', component: HomeComponent
   },
-  {
-	  path:'product',
-	  loadChildren:'./programme/programme.module#ProgrammeModule'
+  // {
+	//   path:'product',
+	//   loadChildren:'./programme/programme.module#ProgrammeModule'
 	  
-	 /*  loadChildren: './products/product.module#ProductModule'},*/
-  },
+	//  /*  loadChildren: './products/product.module#ProductModule'},*/
+  // },
   {
     path: '' , redirectTo: 'home', pathMatch:'full'
   },
@@ -26,8 +26,8 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes),
-    AboutUsModule
+    RouterModule.forRoot(routes)
+    
   ],
   exports: [RouterModule]
 })

@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-h2.text-edit {
+h1.text-edit,h2.text-edit {
 	margin-top:.2rem;
     text-align: center;
     font-weight: 400;
+    font-size:1.6rem;
+}
+
+.card {
+    background-color: #e1faee;
 }
