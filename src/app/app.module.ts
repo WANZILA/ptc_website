@@ -14,8 +14,8 @@ import { ContactUsModule } from './contact-us/contact-us.module';
 import { QuestionComponent } from './question/question.component';
 //import { StudentDashboardRoutingModule } from './student-dashboard/student-dashboard-routing.module';
 import { StudentDashboardModule } from './student-dashboard/student-dashboard.module';
-import { LibraryComponent } from './college-servies/library/library.component'
 import { CollegeServicesModule } from './college-services/college-services.module';
+import { CollegeProjectsModule } from './college-projects/college-projects.module';
 
 
 @NgModule({
@@ -25,8 +25,7 @@ import { CollegeServicesModule } from './college-services/college-services.modul
     PageNotFoundComponent,
     FooterComponentComponent,
     QuestionComponent,
-    LibraryComponent,
-        
+     
   ],
   imports: [
     BrowserModule,
@@ -34,7 +33,8 @@ import { CollegeServicesModule } from './college-services/college-services.modul
     AboutUsModule,
     StudentDashboardModule,
     ProgrammeModule,
-    CollegeServicesModule,    
+    CollegeServicesModule, 
+    CollegeProjectsModule,   
     ContactUsModule,
     UserModule,    
     AppRoutingModule    

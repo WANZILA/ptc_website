@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
 h1.text-edit,h2.text-edit {
 	margin-top:.2rem;
     text-align: center;
