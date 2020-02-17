@@ -15,9 +15,7 @@ import { ProgrammeTuitionComponent } from './programme-tuition/programme-tuition
 
 
 const routes: Routes = [
- /* {
-    path: '', redirectTo: 'programme', pathMatch:'full'
-  },*/
+
   {
     path: 'programme', component: ProgrammeComponent,
     children:[ 
@@ -27,7 +25,7 @@ const routes: Routes = [
       {
         path: 'programme-certificate', component: ProgrammeCertificateComponent
       }     
-       ]
+    ]
   },
   {
     path: 'programme-diploma-counseling-and-guidance', component: ProgrammeDiplomaCounselingAndGuidanceComponent

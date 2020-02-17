@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { switchMap } from 'rxjs/operators';
-import { ActivatedRoute } from '@angular/router';
+// import { switchMap } from 'rxjs/operators';
+// import { ActivatedRoute } from '@angular/router';
 
 //import { ProgrammeService } from './programme.service';
-import { Programme } from '../programme';
-import { Observable } from 'rxjs';
+// import { Programme } from '../programme';
+// import { Observable } from 'rxjs';
 import { ProgrammeService } from '../programme.service';
 
 @Component({
@@ -13,21 +13,27 @@ import { ProgrammeService } from '../programme.service';
   styleUrls: ['./programme.component.css']
 })
 export class ProgrammeComponent implements OnInit {
-  programmes$: Observable<Programme[]>;
-  selectedId: number;
+  // programmes$: Observable<Programme[]>;
+  // selectedId: number;
+  // programmes: Programme[];
   
 
   constructor(
-    // private service: ProgrammeService,
-    // private route: ActivatedRoute
+    // private programmeService: ProgrammeService,
+    
     ) {     }
 
-  ngOnInit() {
+  ngOnInit(): void {
     // this.programmes$ = this.route.paramMap.pipe(
     //   switchMap(params => {
     //     this.selectedId = +params.get('id');
     //     return this.service.getProgrammes();
     //   })
+    // )
+    // this.programmeService.getProgrammes().subscribe(
+    //   // programmes => {
+    //   //   this.programmes = programmes;
+    //   // }
     // )
 
   }
