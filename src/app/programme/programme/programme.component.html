@@ -61,7 +61,7 @@
                         </div>
                     </div> -->
 
-                    <!-- <div class="table-responsive">
+                    <div class="table-responsive">
                       <table class="table mb-0"
                         *ngIf="programmes && programmes.length">
                         <thead>
@@ -78,8 +78,12 @@
                             <a> {{programmes.id}}</a>
                           </td>
                         </tr>
+                        <tr *ngFor="let programme of programmes">
+                          <td> {{programme.id}}</td>
+                          <td>{{programme.programme}}</td>
+                        </tr>
                       </table>
-                    </div> -->
+                    </div>
                 </section>
                
             </main>

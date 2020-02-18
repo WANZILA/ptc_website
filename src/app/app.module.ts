@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import{ FormsModule } from '@angular/forms';
+import{ HttpClientModule } from '@angular/common/http';
+import { InMemoryDataService } from './in-memory-data.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +18,7 @@ import { QuestionComponent } from './question/question.component';
 import { StudentDashboardModule } from './student-dashboard/student-dashboard.module';
 import { CollegeServicesModule } from './college-services/college-services.module';
 import { CollegeProjectsModule } from './college-projects/college-projects.module';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 
 @NgModule({
@@ -29,6 +32,10 @@ import { CollegeProjectsModule } from './college-projects/college-projects.modul
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+     HttpClientInMemoryWebApiModule.forRoot(
+       InMemoryDataService,{ dataEncapsulation: false}
+     ),
     FormsModule,
     AboutUsModule,
     StudentDashboardModule,
