@@ -1,14 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="container-fluid">
-    <header id="header-edit">
-        <div id="contact-links" >
-           <!-- final piece to complete
+
+    <!--  <header id="header-edit">
+      <div id="contact-links" >
+            final piece to complete
              <div id="head-links-logo">
                 <img src="../assets/img/logo_small.png" class="img-responsive" alt="college small logo">
                 <span> Pentecostal Theological College</span>
             </div>
-            -->
-           <!-- <div id="head-links"> 
+          
+           <div id="head-links"> 
               <ul>
                 <li class="social-link"><a href="..."><span class="fa fa-facebook"></span></a></li>
                 <li class="social-link"><a><span class="fa fa-twitter"></span></a></li>
@@ -29,10 +29,11 @@
                   </li>
                 </ul>
             </div>
-			-->
+			
         </div>
-        
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      -->  
+       <!-- final navigation
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <a class="navbar-brand" href="#">
             <img class="img-responsive " src="../assets/img/ptc-logo-small2.svg"alt="PTC logo">
             <span class="align-middle logo-text">Pentecostal Theological<br> College Mbale</span>
@@ -63,13 +64,13 @@
                 <a class="nav-link dropdown-toggle" [routerLink]="['/programme']" routerLink="active"  id="programmeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Programmes
                 </a>
-                <!-- <div class="dropdown-menu " aria-labelledby="programmeDropdown">
+                <div class="dropdown-menu " aria-labelledby="programmeDropdown">
                     <div classs="list-group"  >
                         <a class="dropdown-item" [routerLink]="['/programme','programme-diploma']" routerLinkActive="active">Diploma</a>
                         <a class="dropdown-item" [routerLink]="['/programme','programme-certificate']" routerLinkActive="active">Certificate</a>
                         <a  class="dropdown-item" role="button"  [routerLink]="['/programme-tuition']">Our Tuition</a>
                     </div>
-                </div> -->
+                </div> 
               </li>
 
               <li class="nav-item dropdown">
@@ -92,7 +93,7 @@
             </ul>
             
           </div>
-        </nav>
+        </nav> -->
 <!-- 
         <nav class="navbar navbar-expand-lg  navbar-light bg-light ">
 
@@ -137,13 +138,43 @@
 
         </nav>
       -->
-      </header>
-</div>
-
-<div class="container-sm">
+     
+     
+    <!-- </header>   -->
+ 
+      
+          <header>
+            <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light cbp-af-header">
+              <!--navbar-brand-->
+              <a class="" href="#"><img src="../assets/img/index/logo2.png" alt="college logo"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+        
+       
+ 
+<div class="container-fluid">
   <router-outlet></router-outlet>
 </div>
 
-<footer class="container-fluid ">
+<footer class="container-fluid">
  <app-footer-component></app-footer-component>
 </footer>

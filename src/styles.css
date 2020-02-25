@@ -1,11 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
 body {
+    min-width: 250px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 86px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
     width: 100%;
     padding-right: 0px;
     padding-left: 0px;
     margin-right: auto;
     margin-left: auto;
+    background-color: fdf6f3;
 }
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 h1.text-edit,h2.text-edit {
 	margin-top:.2rem;
     text-align: center;
@@ -16,3 +37,83 @@ h1.text-edit,h2.text-edit {
 .card {
     background-color: #e1faee;
 }
+
+/**************navigation **************/
+.bg-light {
+    background-color: #813531!important;
+    /* background-color: #8c1313; */
+}
+.navbar {
+    padding: .5rem 2rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(255,255,255,1);
+}
+
+@media(max-width: 400px){
+    header{
+        position: relative;
+    }
+    .navbar img{
+        position: absolute;
+        top: 0;
+        bottom:0;
+        margin: auto;
+        width: 70%;
+    }
+}
+
+
+/*github.com/codrops/AnimatedHeader*/
+.cba-af-header-shrink{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    opacity: 0.9;
+} 
+
+
+.nav-link {
+    display: block;
+    padding: 1.1rem 1rem;
+}
+
+
+@media (max-width:575.98px){
+    body {
+        min-width: 250px;
+        padding-right: 2px;
+        padding-left: 2px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .col-12{
+        padding-right: 0px;
+        padding-left: 0px;
+        margin: 0 auto;
+    }
+    h1.text-edit, h2.text-edit {
+        margin-top: .2rem;
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width:767.98px){
+    body {
+        
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    h1.text-edit, h2.text-edit {
+        margin-top: .2rem;
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.6rem;
+    }
+} 

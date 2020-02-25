@@ -143,16 +143,23 @@ span a.apply_links:hover {
 }
 
 
-
   /******************************APPLY**************/
   div.cols{
     background: #813531;
     color:#bfbfbf;
     margin-top: 2px;
     margin-bottom:2px;
-    margin-right: 15px;
-    margin-left: 15px;
+    /* margin-right: 15px;
+    margin-left: 15px; */
+    margin-right: 0px;
+    margin-left: 0px;
     }
+  
+  /*********************** Testmony*******************/
+.col-lg-6-edit img {
+  margin-bottom: .5rem;
+}
+
 }
 
 
@@ -214,16 +221,19 @@ span a.apply_links:hover {
   }
   
 	/******************Apply ************/
-	  div.cols{
+
+  div.cols{
     background: #813531;
     color:#bfbfbf;
-    margin-top: 10px;
-    margin-left: 15px;
-    margin-bottom:0px;
-    margin-right: 0px;  
-    flex: 0 0  30.555555%;
-    max-width: 30.555555%;  
-    font-size: 1rem; 
+    margin-top: 2px;
+    margin-bottom:2px;
+    margin-right: 0px;
+    margin-left: 0px;
+    }
+  
+/*****Student testmony*****/
+  .col-lg-6-edit img {
+    margin-bottom: .5rem;
   }
 	
   h2{
@@ -262,6 +272,10 @@ span a.apply_links:hover {
     flex: 0 0  30.555555%;
     max-width: 30.555555%;  
     font-size: 1.5rem; 
+  }
+/*************student testmony****/
+  .col-lg-6-edit img {
+    margin-bottom: .5rem;
   }
 }
 
