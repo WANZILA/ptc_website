@@ -146,25 +146,60 @@
           <header>
             <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light cbp-af-header">
               <!--navbar-brand-->
-              <a class="" href="#"><img src="../assets/img/index/logo2.png" alt="college logo"></a>
+              <a class="" href="#"><img src="../assets/img/ptc-web-logo.png" alt="college logo"></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav  mr-auto">
                   <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <div class="list-group">
+                          <a class="dropdown-item" [routerLink]="['/history']" routerLinkActive="active">History</a>
+                          <a class="dropdown-item" [routerLink]="['/administrators']" routerLinkActive="active">Administrators</a>
+                          <div class="dropdown-divider"></div>
+                      </div>
+                     
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" [routerLink]="['/programme']" routerLink="active"  id="programmeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Programmes
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="programmeDropdown">
+                        <div classs="list-group"  >
+                            <a class="dropdown-item" [routerLink]="['/programme','programme-diploma']" routerLinkActive="active">Diploma</a>
+                            <a class="dropdown-item" [routerLink]="['/programme','programme-certificate']" routerLinkActive="active">Certificate</a>
+                            <a  class="dropdown-item" role="button"  [routerLink]="['/programme-tuition']">Our Tuition</a>
+                        </div>
+                    </div> 
+                  </li>
+    
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"   id="serviceDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Services 
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="serviceDropdown">
+                        <div classs="list-group"  >
+                            <a  class="dropdown-item" role="button"  [routerLink]="['/library']">Library</a>
+                        </div>
+                    </div>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/contact-us']" routerLinkActive="active">Contact</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link" href="#">Blog</a>
                   </li>
                 </ul>
+                
               </div>
             </nav>
           </header>

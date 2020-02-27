@@ -44,7 +44,7 @@ h1.text-edit,h2.text-edit {
     /* background-color: #8c1313; */
 }
 .navbar {
-    padding: .5rem 2rem;
+    padding: .5rem 0.1rem;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
@@ -53,18 +53,31 @@ h1.text-edit,h2.text-edit {
     color: rgba(255,255,255,1);
 }
 
-@media(max-width: 400px){
-    header{
-        position: relative;
+@media(max-width:359.98px){
+    .navbar a {
+        max-width: 190px;
+    }
+    .navbar img{
+        /* position: absolute; */
+        top: 1px;
+        bottom:0;
+        margin: auto;
+        width: 50%;
+    }
+}
+
+ /* @media(max-width: 971.98px){
+    nav{
+         position: relative;  
     }
     .navbar img{
         position: absolute;
-        top: 0;
+        top: 1px;
         bottom:0;
         margin: auto;
-        width: 70%;
+        width: 10%;
     }
-}
+}  */
 
 
 /*github.com/codrops/AnimatedHeader*/
@@ -84,10 +97,19 @@ h1.text-edit,h2.text-edit {
 @media (max-width:575.98px){
     body {
         min-width: 250px;
+        padding-top:55px;
         padding-right: 2px;
         padding-left: 2px;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .navbar img{
+        /* position: absolute; */
+        top: 1px;
+        bottom:0;
+        margin: auto;
+        width: 50%;
     }
     .col-12{
         padding-right: 0px;
@@ -104,11 +126,17 @@ h1.text-edit,h2.text-edit {
 
 @media (min-width: 576px) and (max-width:767.98px){
     body {
-        
+        padding-top:56px;
         padding-right: 0px;
         padding-left: 0px;
         margin-right: auto;
         margin-left: auto;
+    }
+    .navbar img{
+        top: 1px;
+        bottom:0;
+        margin: auto;
+        width: 50%;
     }
     h1.text-edit, h2.text-edit {
         margin-top: .2rem;
@@ -117,3 +145,30 @@ h1.text-edit,h2.text-edit {
         font-size: 1.6rem;
     }
 } 
+
+@media (min-width: 768px) and (max-width: 971.98px){
+    body{
+        padding-top:30px;
+    }
+    .navbar img{
+        top: 1px;
+        bottom:0;
+        margin: auto;
+        width: 80%;
+    }
+}
+
+@media(min-width: 972px) and (max-width: 1199.98px)
+{
+    /* .navbar img{
+        top: 1px;
+        bottom:0;
+        margin: auto;
+        width: 10%;
+    } */
+}
+
+@media(min-width:1200px){
+
+
+}
