@@ -1,9 +1,11 @@
-export interface Programme{
+export interface IProgramme{
 	id: number,
-	programme: string
+	programmeName: string,
+	programme_data:string,
+	programme_duration: string
 }
 
 export interface ProgrammeResolved{
-	programme: Programme,
+	programme: IProgramme,
 	error?:any
 }

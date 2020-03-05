@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { ProgrammeRoutingModule } from './programme-routing.module';
 import { ProgrammeComponent } from './programme/programme.component';
@@ -13,6 +14,7 @@ import { ProgrammeDiplomaChildDevComponent } from './programme-diploma-child-dev
 import { ProgrammeDiplomaCounselingAndGuidanceComponent } from './programme-diploma-counseling-and-guidance/programme-diploma-counseling-and-guidance.component';
 import { AllCoursesComponent } from './all-courses/all-courses.component';
 import { ProgrammeTuitionComponent } from './programme-tuition/programme-tuition.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -31,7 +33,11 @@ import { ProgrammeTuitionComponent } from './programme-tuition/programme-tuition
   ],
   imports: [
     CommonModule,
+    SharedModule,
     ProgrammeRoutingModule
+  ],
+  exports:[
+    ProgrammeComponent
   ]
 })
 export class ProgrammeModule { }
