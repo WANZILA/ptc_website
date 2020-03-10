@@ -1,11 +1,27 @@
 [
     {
         "id": 1,
-        "programme": "diploma"
-    },
-   {
-        "id": 2,
-        "programme":"cert"
-    
-    }
+        "programmeName": "Diploma in Bible and Theology",
+        "programme_data": "",
+        "programme_duration"  :"   2"  
+        
+      },
+      {
+        "id"  :2,
+        "programmeName"  :" Certificate in Church Ministry",
+        "programme_data"  : "certificate ",
+        "programme_duration"  : "  2"  
+      },
+      {
+        "id"  : 3,
+        "programmeName"  :"Diploma in ICT",
+        "programme_data"  :"",
+        "programme_duration"  : "  2"  
+      },
+      {
+        "id"  :4,
+        "programmeName"  :"  Certificate in ICT"  ,
+        "programme_data"  :"",
+        "programme_duration"  : "  2"  
+      }
 ]

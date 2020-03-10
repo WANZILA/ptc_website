@@ -92,7 +92,11 @@
                         </thead>
                    
                         <tr *ngFor="let programme of filteredProgrammes">
-                          <td> {{programme.programmeName}}</td>
+                          <td> 
+                            <a>
+                              {{programme.programmeName}}
+                            </a>
+                          </td>
                           <td>{{programme.programme_duration}}</td>
                         </tr>
                       </table>

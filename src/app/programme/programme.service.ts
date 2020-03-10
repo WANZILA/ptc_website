@@ -15,7 +15,7 @@ import { IProgramme } from './programme';
 export class ProgrammeService{
 
    //programmes is being got from in-memory-data.service
-    private programmesUrl = '../programmes'
+    private programmesUrl = 'api/programme.json';
     //private programmesUrl= 'api/programme.json'
 
 //    httpOptions = {
@@ -29,7 +29,7 @@ export class ProgrammeService{
     getProgrammes():Observable<IProgramme[]>{
         return this.http.get<IProgramme[]>(this.programmesUrl)
             .pipe(
-                tap(data => console.log(JSON.stringify(data))),
+                tap(data => console.log('All:' + JSON.stringify(data))),
                 catchError(this.handleError)
             );
     }
