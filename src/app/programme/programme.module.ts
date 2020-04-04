@@ -15,6 +15,8 @@ import { ProgrammeDiplomaCounselingAndGuidanceComponent } from './programme-dipl
 import { AllCoursesComponent } from './all-courses/all-courses.component';
 import { ProgrammeTuitionComponent } from './programme-tuition/programme-tuition.component';
 import { SharedModule } from '../shared/shared.module';
+import { ProgrammeDetailComponent } from './programme-detail/programme-detail.component';
+import { ProgrammeEditComponent } from './programme-edit/programme-edit.component';
 
 
 @NgModule({
@@ -29,7 +31,7 @@ import { SharedModule } from '../shared/shared.module';
     ProgrammeDiplomaChildDevComponent, 
     ProgrammeDiplomaCounselingAndGuidanceComponent, 
     AllCoursesComponent, 
-    ProgrammeTuitionComponent
+    ProgrammeTuitionComponent, ProgrammeDetailComponent, ProgrammeEditComponent
   ],
   imports: [
     CommonModule,

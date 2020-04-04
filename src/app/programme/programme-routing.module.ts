@@ -11,21 +11,32 @@ import { ProgrammeDiplomaCounselingAndGuidanceComponent } from './programme-dipl
 import { ProgrammeDiplomaComponent } from './programme-diploma/programme-diploma.component';
 import { ProgrammeComponent } from './programme/programme.component';
 import { ProgrammeTuitionComponent } from './programme-tuition/programme-tuition.component';
+import { ProgrammeDetailComponent } from './programme-detail/programme-detail.component';
+import { ProgrammeEditComponent } from './programme-edit/programme-edit.component';
+import { ProgrammeResolver } from './programme-resolver.service';
+//import { ProgrammeEditComponent } from './programme-edit.component';
 
 
 
 const routes: Routes = [
 
   {
-    path: 'programme', component: ProgrammeComponent,
-    children:[ 
-      {
-        path: 'programme-diploma', component: ProgrammeDiplomaComponent
-      },
-      {
-        path: 'programme-certificate', component: ProgrammeCertificateComponent
-      }     
-    ]
+    path: 'programmes', component: ProgrammeComponent,
+    
+  },
+  {
+    path: 'programmes/:id', component: ProgrammeDetailComponent,
+    resolve:{ resolvedData: ProgrammeResolver}
+  },
+  {
+    path: 'programmes/:id/edit', component: ProgrammeEditComponent,
+    resolve:{ resolvedData: ProgrammeResolver}
+  },
+ {
+    path: 'programme-diploma', component: ProgrammeDiplomaComponent
+  },
+  {
+    path: 'programme-certificate', component: ProgrammeCertificateComponent
   },
   {
     path: 'programme-diploma-counseling-and-guidance', component: ProgrammeDiplomaCounselingAndGuidanceComponent

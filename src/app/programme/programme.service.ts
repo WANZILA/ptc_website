@@ -34,17 +34,17 @@ export class ProgrammeService{
             );
     }
 
-    // getProgramme(id: number ): Observable<IProgramme>{
-    //     if(id === 0 ){
-    //         //return of(this.initializeProgramme());
-    //     }
-    //     const url = `${this.programmesUrl}/${id}`;
-    //     return this.http.get<IProgramme>(url)
-    //     .pipe(
-    //         tap(data => console.log('getProgramme:' + JSON.stringify(data))),
-    //         catchError(this.handleError)
-    //     );
-    // }
+    getProgramme(id: number ): Observable<IProgramme>{
+        if(id === 0 ){
+            return of(this.initializeProgramme());
+        }
+        const url = `${this.programmesUrl}/${id}`;
+        return this.http.get<IProgramme>(url)
+        .pipe(
+            tap(data => console.log('getProgramme:' + JSON.stringify(data))),
+            catchError(this.handleError)
+        );
+    }
 
     private handleError(err){
         let errorMessage: string;
@@ -55,12 +55,18 @@ export class ProgrammeService{
         return throwError(errorMessage);
     }
 
-    // private initializeProgramme(): Programme {
-    //     return{
-    //     //     id: 0,
-    //     //     programme: null
-    //      };
-    // }
+    private initializeProgramme(): IProgramme {
+        return{
+            programmeId: null,
+            programmeName: null,
+            programmeImageUrl: null,	
+            programme_duration: null,
+            programme_tuition: null,
+            programme_description: null,
+            programme_objectives: null,
+            programme_outcomes: null,
+         };
+    }
 
 }
 

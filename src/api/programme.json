@@ -1,27 +1,23 @@
 [
     {
-        "id": 1,
-        "programmeName": "Diploma in Bible and Theology",
-        "programme_data": "",
-        "programme_duration"  :"   2"  
+        "programmeId ": 1,
+        "programmeName ": "Diploma in Bible and Theology", 
+        "programmeImageUrl": "../../assets/img/programmes/theology.jpg",      
+        "programme_duration ": "2 years",
+        " programme_tuition ": 300000,
+        "programme_description ": " ",
+        "programme_objectives ": "",
+        "programme_outcomes ": ""
         
       },
       {
-        "id"  :2,
+        "programmeId"  :2,
         "programmeName"  :" Certificate in Church Ministry",
-        "programme_data"  : "certificate ",
-        "programme_duration"  : "  2"  
-      },
-      {
-        "id"  : 3,
-        "programmeName"  :"Diploma in ICT",
-        "programme_data"  :"",
-        "programme_duration"  : "  2"  
-      },
-      {
-        "id"  :4,
-        "programmeName"  :"  Certificate in ICT"  ,
-        "programme_data"  :"",
-        "programme_duration"  : "  2"  
+        "programmeImageUrl": "../../assets/img/programmes/ict.jpg",
+        "programme_duration"  : "  2" ,
+        "programme_description ": " ",
+        "programme_objectives ": "",
+        "programme_outcomes ": "" 
       }
+     
 ]
