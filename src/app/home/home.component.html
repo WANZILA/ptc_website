@@ -94,27 +94,17 @@
     </div>
     <div class="col-12 ">         
         <div class="card-deck">               
-                <div class="card">                    
-                  <div class="card-body">                                                
-                    <div class="media">
-                      <img class="img-fluid card-img-top mr-3 img-thumbnail" src="../../assets/img/index/4.svg" alt="card img">
-                        <div class="media-body">
-                          <h5 class="mt-0 h5-edit">Media heading</h5>
-                            <a href="card-link text-left">
-                              This card has supporting text below as a natural lead-in to additional content Application
+                <div class="card">  
+                  <h5 class="card-title">Welcome Message from the Principal</h5>                  
+                  <img class="img-fluid card-img-top mr-3 "  src="../../assets/img/about/principle.png" alt="card img">
+                  <div class="card-body"> 
+                     <!-- <img class="img-fluid card-img-top mr-3 img-thumbnail" src="../../assets/img/index/4.svg" alt="card img"> -->
+                        
+                     <p class="text-justify">Dear Friends! Warm Greetings in the Name of our Lord Jesus Christ! It is with immense joy 
+                      and delight that,I learn of your and </p>       
+                     <a class="btn btn-primary" [routerLink]="['/administrators']">
+                              Read More  
                             </a> 
-                         </div>
-                      </div>
-                    <hr>
-                      <div class="media">
-                        <img class=" card-img-top mr-3 img-thumbnail" src="../../assets/img/index/4.svg" alt="card img">
-                          <div class="media-body">
-                            <h5 class="mt-0 h5-edit">Media heading</h5>
-                              <a href="card-link text-left">
-                                This card has supporting text below as a natural lead-in to additional content Application
-                              </a> 
-                           </div>
-                        </div>
                   </div>
                   
                 </div>
@@ -201,7 +191,7 @@
     <!--call action -->
     <section class="row text-center">
       <div class="col-sm-12 col-lg-4 cols cols-lg-4-edit " > 
-          <span><a  class="apply_links " [routerLink]="['/programme']"  >Courses Offered</a>  </span>
+          <span><a  class="apply_links " [routerLink]="['/programmes']"  >Courses Offered</a>  </span>
       </div>
       <div class="col-sm-12 col-lg-4  cols cols-lg-4-edit">
           <span><a class="apply_links" [routerLink]="['/studentLife']">Life at the college</a>  </span>

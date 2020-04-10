@@ -15,7 +15,7 @@ export class ProgrammeResolver implements Resolve<ProgrammeResolved>{
 
 	resolve(route: ActivatedRouteSnapshot,
 	        state: RouterStateSnapshot):Observable<ProgrammeResolved>{
-				const id = route.paramMap.get('id');
+				const id = route.paramMap.get('programmeId');
 
 				//checking if its a number
 				if(isNaN(+id)){

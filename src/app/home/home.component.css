@@ -145,6 +145,11 @@ span a.apply_links:hover {
     text-decoration: none;
     background-color: transparent;
 }
+img.img-fluid.card-img-top.mr-3 {
+  width: 40%;
+}
+
+
 
 
   /******************************APPLY**************/
@@ -223,6 +228,13 @@ span a.apply_links:hover {
   max-width: 15%;
   height: auto;
   }
+  /* img.img-fluid.card-img-top.mr-3 {
+    width: 50%;
+   text-align:center;
+} */
+img.img-fluid.card-img-top.mr-3 {
+  width: 40%;
+}
   
 	/******************Apply ************/
 
@@ -262,6 +274,9 @@ span a.apply_links:hover {
   .img-thumbnail {
   max-width: 10%;
   height: auto;
+  }
+  img.img-fluid.card-img-top.mr-3 {
+    width: 20%;
   }
   
   /************Apply *******************/
@@ -304,6 +319,7 @@ span a.apply_links:hover {
       padding: .5rem;
       max-height:300px;
     }
+
   /*
   .card-deck {
   flex-flow: row;
@@ -319,6 +335,9 @@ span a.apply_links:hover {
   padding: .1rem;
   max-width: 25%;
   height: auto;
+  }
+  img.img-fluid.card-img-top.mr-3 {
+    width: 50%;
   }
  /* div.col-12-edit{
     padding-left:0px;
@@ -392,6 +411,9 @@ span a.apply_links:hover {
   padding: .1rem;
   max-width: 25%;
   height: auto;
+  }
+  img.img-fluid.card-img-top.mr-3 {
+    width: 60%;
   }
  /* div.col-12-edit{
     padding-left:0px;

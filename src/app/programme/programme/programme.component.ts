@@ -61,10 +61,7 @@ export class ProgrammeComponent implements OnInit {
       return this.programmes.filter((programme: IProgramme) =>
         programme.programmeName.toLocaleLowerCase().indexOf(filterBy) !== -1);
    }
-
-
-
-
+   
   onClickAll():void{
      this.listFilter = '';
   }
