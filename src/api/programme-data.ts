@@ -8,12 +8,13 @@ export class ProgrammeData implements InMemoryDbService {
   createDb() {
     const programmes: IProgramme[] = [
       {
-        'programmeId': 1,
-        'programmeName':'Certificate in Church Ministry'
-        
-      }
-      
-     
+        'id': 1,
+        'programmeName':'Certificate in Church Ministry'        
+      }, 
+      // {
+      //   'Id': 2,
+      //   'programmeName':'Diploma in Church Ministry'        
+      // }   
     ];
     return {  programmes };
   }

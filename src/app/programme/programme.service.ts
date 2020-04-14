@@ -44,7 +44,19 @@ export class ProgrammeService{
             tap(data => console.log('getProduct: ' + JSON.stringify(data))),
             catchError(this.handleError)
           );
-      }
+    }
+    
+    // getProgramme(id: number): Observable<IProgramme> {
+    //     if (id === 0) {
+    //       return of(this.initializeProgramme());
+    //     }
+    //     const url = `${this.programmesUrl}/${id}`;
+    //     return this.http.get<IProgramme>(url)
+    //       .pipe(
+    //         tap(data => console.log('getProduct: ' + JSON.stringify(data))),
+    //         catchError(this.handleError)
+    //       );
+    //   }
 
     private handleError(err){
         let errorMessage: string;
@@ -57,7 +69,8 @@ export class ProgrammeService{
 
     private initializeProgramme(): IProgramme {
         return{
-            programmeId: null,
+            // programmeId: null,
+            id:null,
             programmeName: null,
             // programmeImageUrl: null,	
             // programme_duration: null,

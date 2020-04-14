@@ -10,25 +10,26 @@ import { map, catchError } from 'rxjs/operators';
 })
 
 export class ProgrammeResolver implements Resolve<ProgrammeResolved>{
-	message: string ='';
+	// message: string ='';
 	constructor( private programmeService: ProgrammeService){}
 
 	resolve(route: ActivatedRouteSnapshot,
 	        state: RouterStateSnapshot):Observable<ProgrammeResolved>{
-				const id = route.paramMap.get('programmeId');
+				//const id = route.paramMap.get('programmeId');
+				const programmeId = route.paramMap.get('programmeId');
 
 				//checking if its a number
-				if(isNaN(+id)){
-					const message = `Product id was not a number : ${id}`;
+				if(isNaN(+programmeId)){
+					const message = `Product programmeId was not a number : ${programmeId}`;
 					return of ({ programme: null, error: message });
 				}
-				return this.programmeService.getProgramme(+id)
+				return this.programmeService.getProgramme(+programmeId)
 				 .pipe(
 						map(programme => ({ programme: programme })),
 						catchError(error => {
 							const message = `Retrieval error: ${error}`;
 							console.error(message);
-							return of ({ programme: null, error: message});
+							return of({ programme: null, error: message});
 						})
 					);
 

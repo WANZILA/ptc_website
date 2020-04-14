@@ -1,5 +1,6 @@
 export interface IProgramme{
-	programmeId: number,
+	 id:number,
+	//programmeId: number,
 	programmeName: string,
 	// programmeImageUrl: string,	
 	// programme_duration: string,

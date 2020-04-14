@@ -25,11 +25,11 @@ const routes: Routes = [
     
   },
   {
-    path: 'programmes/:id', component: ProgrammeDetailComponent,
+    path: 'programmes/:programmeId', component: ProgrammeDetailComponent,
     resolve:{ resolvedData: ProgrammeResolver}
   },
   {
-    path: 'programmes/:id/edit', component: ProgrammeEditComponent,
+    path: 'programmes/:programmeId/edit', component: ProgrammeEditComponent,
     resolve:{ resolvedData: ProgrammeResolver}
   },
  {
