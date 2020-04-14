@@ -1,19 +1,108 @@
-<div class= "card">
-    <div class="card-header">
-        {{pageTitle}}
-    </div>
-    <div class="card-body" *ngIf="programme">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="row">
-                    <div class="col-md-3">Name:</div>
-                    <div class="col-md-6">{{programme.programmeName}}  <b>{{programme.programmeId}} </b></div>
-                    <div class="col-md-1">{{programme.programmeId}}</div>
+
+
+<div class="container">
+    <section class="row">
+        <div class="col-12">
+
+            <div class= "card" *ngIf="programme">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img class="img-fluid mr-3" [src]="programme.programmeImageUrl" alt="course image">
+                            <div class="col-12">
+                                <h1 class="heading1"> {{programme.programmeName}}</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-body" *ngIf="programme">
+                    <div class="row">
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="heading2 text-center"> Course description</h2>  
+                                {{ programme.programme_description}} 
+                            
+                            <hr class="hr-course-edit">
+                            <h2 class="heading2 text-center">PROGRAMME OBJECTIVES</h2> 
+                                This course aims at:
+                                <ol class="list-group">
+                                    <li class="list-group-item">Introduce students to the opportunities and constraints in Agribusiness.</li>
+                                    {{programme.programme_objectives}}
+                                </ol>
+
+                                <hr class="hr-course-edit"> 
+                                <h2 class="heading2 text-center">PROGRAMME LEARNING OUTCOMES</h2>
+                                Upon successful completion of this course, students will be able to:
+                                <ol> 
+                                    <li>  Discuss to the opportunities and constraints in Agribusiness.</li>
+                                    {{programme.programme_outcomes }}
+                                    
+                                    'programme_tuition': '300,000',
+                                    'programme_duration': '2 years',
+    
+                                </ol>
+                        </div>
+                                <!-- <div class="col-md-6">{{programme.programmeName}}  <b>{{programme.programmeId}} </b></div>
+                                <div class="col-md-1">{{programme.programmeId}}</div>  -->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+      </section>
+      <section class="row">
+        <div class="col-12">
+            <div class="fixed-attachment">
+                <h1 class="heading1"> 
+                </h1>
+            </div>
+        </div>
+      </section>
+
+    <section class="row">
+        <div class="col-12 ">
+            <h2 class="text-edit"> Apply </h2> 
+        </div>
+      <div class="col-12">
+          <img class="card-img-top d-block w-100" src="../../assets/img/index/apply1.jpg" alt="Graduate receives transcript">
+      </div>
+    </section>
+    <!--call action -->
+    <section class="row text-center">
+      <div class="col-sm-12 col-lg-4 cols cols-lg-4-edit " > 
+          <span><a  class="apply_links " [routerLink]="['/programmes']"  >Courses Offered</a>  </span>
+      </div>
+      <div class="col-sm-12 col-lg-4  cols cols-lg-4-edit">
+          <span><a class="apply_links" [routerLink]="['/studentLife']">Life at the college</a>  </span>
+      </div>
+      <div class="col-sm-12 col-lg-4  cols">
+          <span><a class="apply_links" [routerLink]="['/application']">How to Apply</a>  </span>
+      </div>
+    </section>
+
+<!--Campus life-->
+
+<section class="row row-edited">
+  <div class="col-12">
+    <h2 class="text-edit"> Student Testimonies </h2>
+  </div>
+</section>
+<section class="row text-center">
+  <div class="col-lg-6  col-lg-6-edit rubberBand" >
+     <img class="img-responsive d-block w-100" src="../../assets/img/index/student_test1.jpg">
+  </div>
+  <div class="col-lg-6 col-lg-6-edit">
+    <img class="img-responsive w-100" src="../../assets/img/index/student_test2.jpg"> 
+  </div>
+
+</section>   <!--end of Campus life-->
+
 </div>
+
+
+
 
 
 
