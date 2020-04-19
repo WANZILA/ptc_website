@@ -70,14 +70,14 @@ export class ProgrammeService{
     private initializeProgramme(): IProgramme {
         return{
             // programmeId: null,
-            id:null,
+            id: null,
             programmeName: null,
-            // programmeImageUrl: null,	
-            // programme_duration: null,
-            // programme_tuition: null,
-            // programme_description: null,
-            // programme_objectives: null,
-            // programme_outcomes: null,
+            programmeImageUrl: null,	
+            programme_duration: null,
+            programme_tuition: null,
+            programme_description: null,
+             programme_objectives: null,
+            programme_outcomes: null,
          };
     }
 

@@ -19,6 +19,8 @@ import { CollegeServicesModule } from './college-services/college-services.modul
 import { CollegeProjectsModule } from './college-projects/college-projects.module';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { ProgrammeData } from 'src/api/programme-data';
+import { SharedModule } from './shared/shared.module';
+import { TestmoniesComponent } from './shared/testmonies/testmonies.component';
 //import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 
@@ -29,6 +31,7 @@ import { ProgrammeData } from 'src/api/programme-data';
     PageNotFoundComponent,
     FooterComponentComponent,
     QuestionComponent,
+    //TestmoniesComponent
     ],
   imports: [
     BrowserModule,
@@ -38,12 +41,13 @@ import { ProgrammeData } from 'src/api/programme-data';
     //    InMemoryDataService,{ dataEncapsulation: false}
     //  ),   
     AboutUsModule,
+    SharedModule,
     StudentDashboardModule,
     ProgrammeModule,
     CollegeServicesModule, 
     CollegeProjectsModule,   
     ContactUsModule,
-    UserModule,    
+    UserModule,  
     AppRoutingModule    
   ],
   providers: [],
