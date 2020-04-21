@@ -86,7 +86,6 @@ div.index_campus_life{
 } */
 
 
-
 @media (max-width: 577.98px ){
   /*****slide section **********************/
 
@@ -136,24 +135,10 @@ div.index_campus_life{
     background-color: transparent;
 }
 img.img-fluid.card-img-top.mr-3 {
-  width: 40%;
+  width: 15%;
+  margin-left: 220px;
 }
 
-
-
-
-  /******************************APPLY**************/
-  div.cols{
-    background: #813531;
-    color:#bfbfbf;
-    margin-top: 2px;
-    margin-bottom:2px;
-    /* margin-right: 15px;
-    margin-left: 15px; */
-    margin-right: 0px;
-    margin-left: 0px;
-    }
-  
 
 
 }
@@ -161,8 +146,6 @@ img.img-fluid.card-img-top.mr-3 {
 
 /****************************** min-width: 576px *****************************************************/
 @media (min-width: 576px) and (max-width: 767.98px){
-  
-
 
   .slide-row h2{
     font-size: 1em;
@@ -178,34 +161,7 @@ img.img-fluid.card-img-top.mr-3 {
     margin-left: -15px;
     }
     
-   /*
-  .card-deck {
-  -ms-flex-flow: column;
-  flex-flow: column;
-  max-width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 10px;
-  }
-
-  .card-deck .card {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex: 1 0 0%;
-  flex: 1 0 0%;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-right: 15px;
-  margin-bottom: 0;
-  margin-left: 0px;
-  height: 500px;
-  overflow: auto;
-  }
-
-  .card-group {
-    flex-flow: column;
-     margin-bottom: 10px; 
-}  */
+   
   .card-img-top {
   width: 20%;
   }
@@ -213,26 +169,12 @@ img.img-fluid.card-img-top.mr-3 {
   max-width: 15%;
   height: auto;
   }
-  /* img.img-fluid.card-img-top.mr-3 {
-    width: 50%;
-   text-align:center;
-} */
-img.img-fluid.card-img-top.mr-3 {
-  width: 40%;
-}
   
-	/******************Apply ************/
-
-  div.cols{
-    background: #813531;
-    color:#bfbfbf;
-    margin-top: 2px;
-    margin-bottom:2px;
-    margin-right: 0px;
-    margin-left: 0px;
-    }
-
-	
+img.img-fluid.card-img-top.mr-3 {
+  width: 30%;
+  margin-left: 165px;
+}
+ 	
   h2{
   margin-block-start: 0em;
   }
@@ -243,8 +185,6 @@ img.img-fluid.card-img-top.mr-3 {
 
 @media (min-width: 768px) and (max-width: 991.98px){
 
-
-  
   .card-deck {
   flex-flow: column;
   margin-right: -15px;
@@ -256,22 +196,10 @@ img.img-fluid.card-img-top.mr-3 {
   height: auto;
   }
   img.img-fluid.card-img-top.mr-3 {
-    width: 20%;
+    width: 25%;
+    margin-left: 245px;
   }
   
-  /************Apply *******************/
-    div.cols{
-    background: #813531;
-    color:#bfbfbf;
-    margin-top: 10px;
-    margin-left: 15px;
-    margin-bottom:0px;
-    margin-right: 0px;
-  
-    flex: 0 0  30.555555%;
-    max-width: 30.555555%;  
-    font-size: 1.5rem; 
-  }
 
 }
 
@@ -295,52 +223,16 @@ img.img-fluid.card-img-top.mr-3 {
       max-height:300px;
     }
 
-  /*
-  .card-deck {
-  flex-flow: row;
-  margin-right: 0px;
-  margin-left: 0px;
-  }
-  .card-group {
-    flex-flow: row;
-    margin-bottom: 10px; 
-} */
-    
+
   .img-thumbnail {
   padding: .1rem;
   max-width: 25%;
   height: auto;
   }
   img.img-fluid.card-img-top.mr-3 {
+    margin-left: 65px;
     width: 50%;
   }
- /* div.col-12-edit{
-    padding-left:0px;
-    padding-right: 0px;
-  }*/
-/**************************Apply *******************/
-
-  div.cols{
-    background: #813531;
-    color:#bfbfbf;
-    margin-top: 10px;
-    margin-left: 15px;
-    margin-bottom:0px;
-    margin-right: 0px;  
-    flex: 0 0  30.555555%;
-    max-width: 30.555555%;  
-    font-size: 1.5rem; 
-  }
-
-  div.cols-lg-4-edit{
-    margin-right: 15px;
-   
-  }/*
-  div.cols-right-margin{
-    margin-right: 20px;
-  }
-  
-*/
 
   a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
     color: #fff;
@@ -369,53 +261,17 @@ img.img-fluid.card-img-top.mr-3 {
       padding: .5rem;
       max-height:300px;
     }
-  /*
-  .card-deck {
-  flex-flow: row;
-  margin-right: 0px;
-  margin-left: 0px;
-  }
-  .card-group {
-    flex-flow: row;
-    margin-bottom: 10px; 
-} */
-    
+      
   .img-thumbnail {
   padding: .1rem;
   max-width: 25%;
   height: auto;
   }
   img.img-fluid.card-img-top.mr-3 {
-    width: 60%;
-  }
- /* div.col-12-edit{
-    padding-left:0px;
-    padding-right: 0px;
-  }*/
-/**************************Apply *******************/
-
-  div.cols{
-    background: #813531;
-    color:#bfbfbf;
-    margin-top: 10px;
-    margin-left: 15px;
-    margin-bottom:0px;
-    margin-right: 0px;
-  
-    flex: 0 0  30.555555%;
-    max-width: 30.555555%;  
-    font-size: 1.5rem; 
+    margin-left: 75px;
+    width: 53%;
   }
 
-  div.cols-lg-4-edit{
-    margin-right: 15px;
-   
-  }/*
-  div.cols-right-margin{
-    margin-right: 20px;
-  }
-  
-*/
 
   a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
     color: #fff;

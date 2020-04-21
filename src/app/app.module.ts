@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import{ HttpClientModule } from '@angular/common/http';
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,10 +18,11 @@ import { QuestionComponent } from './question/question.component';
 import { StudentDashboardModule } from './student-dashboard/student-dashboard.module';
 import { CollegeServicesModule } from './college-services/college-services.module';
 import { CollegeProjectsModule } from './college-projects/college-projects.module';
-import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+
 import { ProgrammeData } from 'src/api/programme-data';
 import { SharedModule } from './shared/shared.module';
-import { TestmoniesComponent } from './shared/testmonies/testmonies.component';
+// import { ApplyNowComponent} from './shared/apply-now/apply-now.component'
+
 //import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 
@@ -31,6 +33,7 @@ import { TestmoniesComponent } from './shared/testmonies/testmonies.component';
     PageNotFoundComponent,
     FooterComponentComponent,
     QuestionComponent,
+    // ApplyNowComponent
     //TestmoniesComponent
     ],
   imports: [

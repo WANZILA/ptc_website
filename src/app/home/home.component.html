@@ -63,7 +63,7 @@
                        
   <section class="row">
     <div class="col-12 ">
-        <h2 class="text-edit"> WELCOME </h2> 
+        <h2 class="text-edit"><b>WELCOME</b>  </h2> 
     </div>
     <div class="col-12 ">         
         <div class="card-deck">               
@@ -85,14 +85,15 @@
                   
                 </div>
 
-                <div class="card">                    
+                <div class="card">   
+                  <h5 class="text-center">Upcoming Events</h5>                  
                   <div class="card-body">                                                
                     <div class="media">
                       <img class=" card-img-top mr-3 img-thumbnail" src="../../assets/img/index/4.svg" alt="card img">
                         <div class="media-body">
-                          <h5 class="mt-0 h5-edit">Media heading</h5>
+                          <h5 class="mt-0 h5-edit">May Intake Registration</h5>
                             <a href="card-link text-left">
-                              This card has supporting text below as a natural lead-in to additional content Application
+                              
                             </a> 
                          </div>
                       </div>
@@ -100,7 +101,7 @@
                       <div class="media">
                         <img class=" card-img-top mr-3 img-thumbnail" src="../../assets/img/index/4.svg" alt="card img">
                           <div class="media-body">
-                            <h5 class="mt-0 h5-edit ">Media heading</h5>
+                            <h5 class="mt-0 h5-edit ">August Intake Registration</h5>
                               <a href="card-link text-left">
                                 This card has supporting text below as a natural lead-in to additional content Application
                               </a> 
@@ -111,15 +112,16 @@
                 </div>
 
 
-                <div class="card">                    
+                <div class="card">  
+                  <h5 class="text-center">Facebook posts</h5>                   
                     <div class="card-body">                                                
                       <div class="media">
-                        <img class=" card-img-top mr-3 img-thumbnail" src="../../assets/img/index/4.svg" alt="card img">
+                        <!-- <img class=" card-img-top mr-3 img-thumbnail" src="../../assets/img/index/4.svg" alt="card img"> -->
                           <div class="media-body">
                             <h5 class="mt-0 h5-edit">Media heading</h5>
                             <div class="fb-page fb_iframe_widget" 
                               data-href="https://www.facebook.com/pentecostaltheologicalcollege" 
-                              data-width="340" data-max-width="340" data-height="325" 
+                              data-width="200" data-max-width="200" data-height="325" 
                               data-hide-cover="true" data-show-facepile="true" 
                               data-tabs="timeline" data-hide-cta="false" data-small-header="true" 
                               data-adapt-container-width="false" fb-xfbml-state="rendered" 
@@ -130,21 +132,10 @@
                                   src="https://web.facebook.com/v2.5/plugins/page.php?adapt_container_width=false&amp;app_id=846690882110183&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D46%23cb%3Df33801c6d0fee7c%26domain%3Dwww.ucc.co.ug%26origin%3Dhttps%253A%252F%252Fwww.ucc.co.ug%252Ff91bd8bcf3941%26relation%3Dparent.parent&amp;container_width=382&amp;height=325&amp;hide_cover=true&amp;hide_cta=false&amp;href=https%3A%2F%2Ffacebook.com%2FUgandaCommunicationsCommission&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=true&amp;tabs=timeline&amp;width=340" 
                                   style="border: none; visibility: visible; width: 340px; height: 325px;" __idm_frm__="905" class="">
                                 </iframe></span></div>
-                              <a href="card-link text-left">
-                                This card has supporting text below as a natural lead-in to additional content Application
-                              </a> 
+                               
                            </div>
                         </div>
-                      <hr>
-                        <div class="media">
-                          <img class=" card-img-top mr-3 img-thumbnail" src="../../assets/img/index/4.svg" alt="card img">
-                            <div class="media-body">
-                              <h5 class="mt-0 h5-edit">Media heading</h5>
-                                <a href="card-link text-left">
-                                  This card has supporting text below as a natural lead-in to additional content Application
-                                </a> 
-                             </div>
-                          </div>
+             
                     </div>
                     
                 </div>
@@ -155,28 +146,8 @@
   </section>
 
 <!---Application-->
-
-    <section class="row">
-        <div class="col-12 ">
-            <h2 class="text-edit"> JOIN US NOW!!!!</h2> 
-        </div>
-      <div class="col-12">
-          <img class="card-img-top d-block w-100" src="../../assets/img/index/apply1.jpg" alt="Graduate receives transcript">
-      </div>
-    </section>
-    <!--call action -->
-    <section class="row text-center">
-      <div class="col-sm-12 col-lg-4 cols cols-lg-4-edit " > 
-          <span><a  class="apply_links" [routerLink]="['/programmes']"  >Courses Offered</a>  </span>
-      </div>
-      <div class="col-sm-12 col-lg-4  cols cols-lg-4-edit">
-          <span><a class="apply_links" [routerLink]="['/studentLife']">Life at the college</a>  </span>
-      </div>
-      <div class="col-sm-12 col-lg-4  cols">
-          <span><a class="apply_links" [routerLink]="['/application']">How to Apply</a>  </span>
-      </div>
-    </section>
-
+  <app-apply-now></app-apply-now>
+   
 <!--Campus life-->
 
 <!--Testmony-->

@@ -1,25 +1,35 @@
 import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+// import { Router } from '@angular/router';
 import { TestmoniesComponent } from './testmonies/testmonies.component';
 import { ApplyNowComponent } from './apply-now/apply-now.component';
 
-
+const routes: Routes = [
+  {
+    path: 'applynow', component: ApplyNowComponent
+  }
+]
 
 @NgModule({
   declarations: [ 
-    TestmoniesComponent, 
-    ApplyNowComponent
+    ApplyNowComponent,
+    TestmoniesComponent 
+    
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forChild(routes)
   ],
   exports: [
     CommonModule,
     FormsModule,
+    ApplyNowComponent,
     TestmoniesComponent,
-    ApplyNowComponent
+    RouterModule
+    
   ]
 })
 export class SharedModule { }
