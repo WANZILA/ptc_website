@@ -66,7 +66,7 @@ export class ProgrammeComponent implements OnInit {
      this.listFilter = '';
   }
   onClickDiploma():void {
-    this.filteredProgrammes = this.programmes;
+    //this.filteredProgrammes = this.programmes;
     this.listFilter = 'Diploma';
   }
   onClickCertificate():void {

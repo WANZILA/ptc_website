@@ -7,7 +7,8 @@ export interface IProgramme{
     programme_tuition: string,
 	programme_description: string[],
 	programme_objectives: string[],
-	programme_outcomes: string[]
+	programme_outcomes: string[],
+	programme_distance_learning: string
 }
 
 export interface ProgrammeResolved{

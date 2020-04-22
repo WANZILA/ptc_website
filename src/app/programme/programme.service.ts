@@ -29,7 +29,8 @@ export class ProgrammeService{
     getProgrammes():Observable<IProgramme[]>{
         return this.http.get<IProgramme[]>(this.programmesUrl)
             .pipe(
-                tap(data => console.log('All:' + JSON.stringify(data))),
+                // tap(data => console.log('All:' + JSON.stringify(data))),
+                tap(),
                 catchError(this.handleError)
             );
     }
@@ -78,6 +79,7 @@ export class ProgrammeService{
             programme_description: null,
              programme_objectives: null,
             programme_outcomes: null,
+            programme_distance_learning:null
          };
     }
 
