@@ -10,7 +10,7 @@
                         <div class="col-md-12">
                             <img class="img-fluid mr-3" [src]="programme.programmeImageUrl" alt="course image">
                             <div class="col-12">
-                                <h1 class="heading1"> {{programme.programmeName}}</h1>
+                                <h1 class="heading1"> <b>{{programme.programmeName}}</b></h1>
                             </div>
                         </div>
                     </div>
@@ -22,31 +22,33 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <h2 class="heading2 text-center"> Course description</h2>  
+                            <h2 class="heading2 text-center"><b>COURSE DESCRIPTION</b>  </h2>  
                                 {{ programme.programme_description}} 
                             
                             <hr class="hr-course-edit">
-                            <h2 class="heading2 text-center">PROGRAMME OBJECTIVES</h2> 
+                            <h2 class="heading2 text-center"><b>PROGRAMME OBJECTIVES</b></h2> 
                                 This course aims at:
-                                <ol class="list-group">
-                                    <li class="list-group-item">Introduce students to the opportunities and constraints in Agribusiness.</li>
-                                    {{programme.programme_objectives}}
+                                <ol class="" *ngIf ="programme.programme_objectives">
+                                    <li class="" *ngFor ='let outcomes of programme.programme_objectives'>
+                                        {{outcomes}}
+                                    </li>
+                                    <!-- {{programme.programme_objectives}} -->
+                                   
                                 </ol>
 
                                 <hr class="hr-course-edit"> 
-                                <h2 class="heading2 text-center">PROGRAMME LEARNING OUTCOMES</h2>
+                                <h2 class="heading2 text-center" *ngIf ="programme.programme_outcomes"><b>PROGRAMME LEARNING OUTCOMES</b></h2>
                                 Upon successful completion of this course, students will be able to:
-                                <ol> 
-                                    <li>  Discuss to the opportunities and constraints in Agribusiness.</li>
-                                    {{programme.programme_outcomes }}
+                                <ol > 
+                                    <li *ngFor ='let outcomes of programme.programme_outcomes'>  
+                                        {{outcomes}}
+                                    </li>
+                                  
                                     
-                                    'programme_tuition': '300,000',
-                                    'programme_duration': '2 years',
-    
+
                                 </ol>
                         </div>
-                                <!-- <div class="col-md-6">{{programme.programmeName}}  <b>{{programme.programmeId}} </b></div>
-                                <div class="col-md-1">{{programme.programmeId}}</div>  -->
+                               
                     </div>
                 </div>
             </div>
