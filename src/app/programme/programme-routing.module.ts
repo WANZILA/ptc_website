@@ -21,17 +21,25 @@ import { ProgrammeResolver } from './programme-resolver.service';
 const routes: Routes = [
 
   {
-    path: 'programmes', component: ProgrammeComponent,
+    path: 'programmes', 
+    children:[
+      {
+        path: '', 
+        component: ProgrammeComponent,
+      },
+      {
+        path: ':programmeId', component: ProgrammeDetailComponent,
+        resolve:{ resolvedData: ProgrammeResolver}
+      },
+      {
+        path: ':programmeId/edit', component: ProgrammeEditComponent,
+        resolve:{ resolvedData: ProgrammeResolver}
+      },
+
+    ]
     
   },
-  {
-    path: 'programmes/:programmeId', component: ProgrammeDetailComponent,
-    resolve:{ resolvedData: ProgrammeResolver}
-  },
-  {
-    path: 'programmes/:programmeId/edit', component: ProgrammeEditComponent,
-    resolve:{ resolvedData: ProgrammeResolver}
-  },
+
  {
     path: 'programme-diploma', component: ProgrammeDiplomaComponent
   },

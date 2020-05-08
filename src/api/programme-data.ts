@@ -21,7 +21,7 @@ export class ProgrammeData implements InMemoryDbService {
         'programme_outcomes' : [],
         'programme_tuition': '300,000',
         'programme_duration': '2 years',
-        'programme_distance_learning': 'Null'
+        'programme_distance_learning': '200000'
                                               
       },
       {
@@ -34,7 +34,7 @@ export class ProgrammeData implements InMemoryDbService {
         'programme_outcomes' : [],
         'programme_tuition': '300,000',
         'programme_duration': '2 years',
-        'programme_distance_learning': '200000'
+        'programme_distance_learning': '150000'
                                               
       },
       {
