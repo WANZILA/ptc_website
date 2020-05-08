@@ -14,6 +14,7 @@ import { ProgrammeTuitionComponent } from './programme-tuition/programme-tuition
 import { ProgrammeDetailComponent } from './programme-detail/programme-detail.component';
 import { ProgrammeEditComponent } from './programme-edit/programme-edit.component';
 import { ProgrammeResolver } from './programme-resolver.service';
+import { ProgrammeEditObjectivesOutcomesComponent } from './programme-edit/programme-edit-objectives-outcomes/programme-edit-objectives-outcomes.component';
 //import { ProgrammeEditComponent } from './programme-edit.component';
 
 
@@ -33,41 +34,23 @@ const routes: Routes = [
       },
       {
         path: ':programmeId/edit', component: ProgrammeEditComponent,
-        resolve:{ resolvedData: ProgrammeResolver}
-      },
-
+        resolve:{ resolvedData: ProgrammeResolver},
+        children: [
+          {
+            path: 'courseDescription',
+            component: ProgrammeEditObjectivesOutcomesComponent
+          },
+          {
+            path: 'objectivesOutcomes',
+            component: ProgrammeEditObjectivesOutcomesComponent
+          }
+        ]
+      }
     ]
     
-  },
-
- {
-    path: 'programme-diploma', component: ProgrammeDiplomaComponent
-  },
-  {
-    path: 'programme-certificate', component: ProgrammeCertificateComponent
-  },
-  {
-    path: 'programme-diploma-counseling-and-guidance', component: ProgrammeDiplomaCounselingAndGuidanceComponent
-  },
-  {
-    path: 'programme-diploma-bible-theology',component: ProgrammeDiplomaBibleTheologyComponent
-  },
-  {
-    path: 'programme-diploma-it', component: ProgrammeDiplomaItComponent
-  },
-  {
-    path: 'programme-diploma-agri-business', component: ProgrammeDiplomaAgriBusinessComponent
-  },
-  {
-    path: 'programme-diploma-socail-dev', component: ProgrammeDiplomaSocailDevComponent
-  },
-  {
-    path: 'programme-diploma-child-dev', component: ProgrammeDiplomaChildDevComponent
-  },
-  {
-    path: 'programme-tuition', component: ProgrammeTuitionComponent
   }
-  
+
+ 
   
 ];
 
