@@ -46,18 +46,38 @@ export class ProgrammeService{
             catchError(this.handleError)
           );
     }
+
+    createProgramme(programme: IProgramme): Observable<IProgramme>{
+        const headers = new HttpHeaders({'Content-Type': 'application/json'});
+        programme.id = null;
+        return this.http.post<IProgramme>(this.programmesUrl, programme, { headers: headers})
+            .pipe(
+                tap(data => console.log('createProduct: ' + JSON.stringify(data))),
+                catchError(this.handleError)
+            );
+    }
     
-    // getProgramme(id: number): Observable<IProgramme> {
-    //     if (id === 0) {
-    //       return of(this.initializeProgramme());
-    //     }
-    //     const url = `${this.programmesUrl}/${id}`;
-    //     return this.http.get<IProgramme>(url)
-    //       .pipe(
-    //         tap(data => console.log('getProduct: ' + JSON.stringify(data))),
-    //         catchError(this.handleError)
-    //       );
-    //   }
+    deleteProgramme(id: number): Observable<{}>{
+        const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+        const url = `${this.programmesUrl}/${id}`;
+        return this.http.delete<IProgramme>(url, {headers: headers })
+            .pipe(
+                tap(data => console.log('deletedProduct: ' + id)),
+                catchError(this.handleError)
+            );
+    }
+
+    updateProgramme(programme: IProgramme): Observable<IProgramme>{
+        const headers = new  HttpHeaders({ 'Content-Type': 'application/json'});
+        const url = `${this.programmesUrl}/${programme.id}`;
+        return this.http.put<IProgramme>(url, programme, {headers: headers})
+          .pipe(
+              tap(() => console.log('updateProgramme: ' + programme.id)),
+              //return th programme on updated
+              map(() => programme),
+              catchError(this.handleError)
+          );
+    }
 
     private handleError(err){
         let errorMessage: string;

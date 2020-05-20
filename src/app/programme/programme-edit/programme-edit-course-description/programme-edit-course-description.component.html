@@ -1,0 +1,163 @@
+
+            <div class= "card" *ngIf="programme">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img class="img-fluid mr-3" [src]="programme.programmeImageUrl" alt="course image">
+                            <div class="col-12">
+                                <h1 class="heading1"> <b>{{programme.programmeName}}</b></h1>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-body" *ngIf="programme">
+                   <form novalidate
+                         #programmeForm="ngForm">
+                        <fieldset>
+                            <legend>Programme Information</legend>
+
+                            <div class="form-group row">
+                                <label class="col-md-2 col-form-label"
+                                        for="programmeNameId">Programme Name
+                                </label>
+                                <div class="col-md-8">
+                                    <input class="form-control"
+                                        id="programmeNameId"
+                                        type="text"
+                                        placeholder="Name (required)"
+                                        required
+                                        minlenght="7"
+                                        [(ngModel)]=programme.programmeName
+                                        name="programmeName"
+                                        #programmeNameVar="ngModel"
+                                        [ngClass]="{'is-invalid':(
+                                                         programmeNameVar.touched ||
+                                                         programmeNameVar.dirty ||
+                                                         programme.id !==0) && 
+                                                         !programmeNameVar.valid}"/>
+                                    <span class="invalid-feedback">
+                                        <span *ngIf="programmeNameVar.errors?.required">
+                                            Product name is required.
+                                        </span>
+                                        <span *ngIf="programmeNameVar.errors?.minlength">
+                                            Product name must be three characters.
+                                        </span>
+                                    </span>    
+
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-md-2 col-form-label"
+                                    for="programmeDescriptionId">Description</label>
+                                <div class="col-md-8">
+                                    <textarea class="form-control"
+                                            id="programmeDescriptionId"
+                                            placeholder="Description"
+                                            rows= 10
+                                            [(ngModel)]=programme.programme_description
+                                            name="programme_description"></textarea>
+
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-md-2 col-form-label"
+                                    for="programmeObjectivesId">Objectives</label>
+                                <div class="col-md-8">
+                                    <textarea class="form-control"
+                                            id="programmeObjectivesId"
+                                            placeholder="Objectives"
+                                            rows= 10
+                                            [(ngModel)]=programme.programme_objectives
+                                            name="programme_objectives"></textarea>
+
+                                </div> 
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-md-2 col-form-label"
+                                    for="programmeOutcomesId">Outcomes</label>
+                                <div class="col-md-8">
+                                    <textarea class="form-control"
+                                            id="programmeOutcomesId"
+                                            placeholder="Outcomes"
+                                            rows= 10
+                                            [(ngModel)]=programme.programme_outcomes
+                                            name="programme_outcomes"></textarea>
+
+                                </div> 
+                            </div>
+
+                            <!-- <div class="col-md-8">
+                                <input class="form-control"
+                                    id="programmeobjectivesId"
+                                    type="text"
+                                    placeholder="Name (required)"
+                                    required
+                                    minlenght="7"
+                                    height="30"
+                                    [(ngModel)]=programme.programme_objectives
+                                    name="programmeobjectives"
+                                    #programmeobjectivesVar="ngModel"
+                                    [ngClass]="{'is-invalid':(
+                                                     programmeobjectivesVar.touched ||
+                                                     programmeobjectivesVar.dirty ||
+                                                     programme.id !==0) && 
+                                                     !programmeobjectivesVar.valid}"/>
+                                <span class="invalid-feedback">
+                                    <span *ngIf="programmeobjectivesVar.errors?.required">
+                                        Product name is required.
+                                    </span>
+                                    <span *ngIf="programmeobjectivesVar.errors?.minlength">
+                                        Product name must be three characters.
+                                    </span>
+                                </span>    
+
+                            </div> -->
+
+
+                        </fieldset>
+                    
+
+                    </form>
+                        <!-- <div class="col-md-12">
+                            <h2 class="heading2 text-center"><b>COURSE DESCRIPTION</b>  </h2>  
+                                {{ programme.programme_description}} 
+                            
+                            <hr class="hr-course-edit">
+                            <h2 class="heading2 text-center"><b>PROGRAMME OBJECTIVES</b></h2> 
+                                This course aims at:
+                                <ol class="" *ngIf ="programme.programme_objectives">
+                                    <li class="" *ngFor ='let outcomes of programme.programme_objectives'>
+                                        {{outcomes}}
+                                    </li>
+                                   
+                                   
+                                </ol>
+
+                                <hr class="hr-course-edit"> 
+                                <h2 class="heading2 text-center" *ngIf ="programme.programme_outcomes"><b>PROGRAMME LEARNING OUTCOMES</b></h2>
+                                Upon successful completion of this course, students will be able to:
+                                <ol > 
+                                    <li *ngFor ='let outcomes of programme.programme_outcomes'>  
+                                        {{outcomes}}
+                                    </li>
+                                  
+                                    
+
+                                </ol>
+                        </div> -->
+                               
+                    
+                </div>
+            </div>
+
+
+
+
+
+
+
+

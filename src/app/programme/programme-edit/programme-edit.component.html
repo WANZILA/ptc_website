@@ -1,1 +1,73 @@
-<p>programme-edit works!</p>
+
+
+<div class="container">
+    <section class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    {{pageTitle}}      
+                </div>
+                
+                <div class="card-body"
+                    *ngIf="programme">
+                    <div class="wizard">
+                        <a [routerLink]="['courseDescription']" routerLinkActive="active">
+                            Course Description
+                        </a>
+                        <a [routerLink]="['objectivesOutcomes']" routerLinkActive="active">
+                            Objectives
+                        </a>
+
+                    </div>
+                
+                </div>
+               
+            </div>
+            <router-outlet></router-outlet>
+
+            <div class="row mb-2">
+                <div class="col-md-8">
+                    <button class="btn btn-primary mr-3"
+                            style="width:80px"
+                            type="button"
+                            title="Save your entered data"
+                            [disabled]="!isValid()"
+                            (click)="saveProgramme()"
+                    >   Save
+                    </button>
+
+                    <button class="btn btn-primary mr-3"
+                        style="width:80px"
+                        type="button"
+                        title="Cancel you Edits"
+                        [routerLink] ="['/programmes']">
+                        Cancel
+                    </button>
+
+                    <button class="btn btn-primary mr-3"
+                        style="width:80px"
+                        type="button"
+                        title="Delete this product"
+                        (click)="deleteProgramme()">
+                        Delete
+                    </button>
+            
+           
+                </div>
+
+            </div>
+        </div>
+        <div class="alert alert-danger"
+            *ngIf="errorMessage">{{errorMessage}}
+        </div> 
+
+      </section>
+
+</div>
+
+
+
+
+
+
+

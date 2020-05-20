@@ -42,8 +42,7 @@ export class ProgrammeData implements InMemoryDbService {
         'id': 3,
         'programmeName':'Diploma in Information Communication Technology',
         'programmeImageUrl':  '../assets/img/programmes/ict.jpg',
-        'programme_description':[ `Information Technology program is designed to provide learners with foundational skills, knowledge and competencies in
-                                  ICTs that enable them to install, oversee, tune, trouble-shoot and maintain computer systems and design solutions to
+        'programme_description':[ `Information Technology program is designed to provide learners with foundational skills, knowledge and competencies in ICTs that enable them to install, oversee, tune, trouble-shoot and maintain computer systems and design solutions to
                                   common ICT challenges in organizations and among individual ICTs users. It is intended to provide learners with hands-on 
                                   abilities so they can be ICT support staff in an organization or to start their own ICT services to meet the pervasive 
                                   need for ICT technicians as computers become a must-have and essential gadget.`],

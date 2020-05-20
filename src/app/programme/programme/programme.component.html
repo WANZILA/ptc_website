@@ -97,7 +97,8 @@
                             </td>
                             <td>{{programme.programme_duration}}</td>
                             <td>{{programme.programme_tuition}}</td>  
-                            <td>{{programme.programme_distance_learning}}</td>               
+                            <td>{{programme.programme_distance_learning}}</td>  
+                            <td><a [routerLink]="['/programmes', programme.id, 'edit']">Edit</a> </td>             
                           </tr>
                         </tbody>
                       </table>
