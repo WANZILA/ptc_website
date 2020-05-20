@@ -38,7 +38,7 @@ export class ProgrammeEditComponent implements OnInit {
       this.pageTitle = 'No programme found';
     } else {
       if(this.programme.id === 0){
-        this.pageTitle = 'Add product';
+        this.pageTitle = 'Add programme';
       }else {
         this.pageTitle = `Edit Programme: ${this.programme.programmeName}`;
       }
@@ -75,6 +75,26 @@ export class ProgrammeEditComponent implements OnInit {
             Object.keys(this.dataIsValid).every(d => this.dataIsValid[d] === true));
   }
 
+  saveProgramme(): void {
+    if(this.isValid()){
+      if(this.programme.id === 0){
+        this.programmeService.createProgramme(this.programme)
+         .subscribe(
+           () => this.onSaveComplete(`The new ${this.programme.programmeName} was saved`),
+           (error: any) => this.errorMessage = <any>error
+         );
+      } else{
+        this.programmeService.updateProgramme(this.programme)
+        .subscribe(
+          () => this.onSaveComplete(`The updated ${this.programme.programmeName} was saved`),
+          (error: any) => this.errorMessage = <any>error
+        );
+      }
+    }else {
+      this.errorMessage = 'Please correct the validation errors';
+ 
+    }
+  }
 
   onSaveComplete(message?: string):void{
     if(message){
