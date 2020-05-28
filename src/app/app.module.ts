@@ -10,7 +10,6 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FooterComponentComponent } from './footer-component/footer-component.component';
 import { AboutUsModule } from './about-us/about-us.module';
-import { ProgrammeModule } from './programme/programme.module';
 import { UserModule } from './user/user.module';
 import { ContactUsModule } from './contact-us/contact-us.module';
 import { QuestionComponent } from './question/question.component';
@@ -46,7 +45,6 @@ import { SharedModule } from './shared/shared.module';
     AboutUsModule,
     SharedModule,
     StudentDashboardModule,
-    ProgrammeModule,
     CollegeServicesModule, 
     CollegeProjectsModule,   
     ContactUsModule,

@@ -12,10 +12,6 @@ import { ProgrammeEditCourseDescriptionComponent } from './programme-edit/progra
 
 
 const routes: Routes = [
-
-  {
-    path: 'programmes', 
-    children:[
       {
         path: '', 
         component: ProgrammeComponent,
@@ -43,13 +39,8 @@ const routes: Routes = [
           }
         ]
       }
-    ]
-    
-  }
+    ];
 
- 
-  
-];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

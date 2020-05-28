@@ -4,6 +4,7 @@ import { AboutUsModule } from './about-us/about-us.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SelectiveStrategy } from './selective-strategy.service';
 
 
 const routes: Routes = [
@@ -18,6 +19,13 @@ const routes: Routes = [
   // },
   {
     path: '' , redirectTo: 'home', pathMatch:'full'
+  },
+  {
+    path: 'programmes',
+    data: { preload: true },
+    loadChildren: () =>
+      import('./programme/programme.module')
+        .then(m => m.ProgrammeModule)
   },
   {
     path: '**', component: PageNotFoundComponent
