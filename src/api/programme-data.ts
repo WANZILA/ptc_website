@@ -11,7 +11,7 @@ export class ProgrammeData implements InMemoryDbService {
         
         'id': 1,
         'programmeName':'Diploma in Bibilical Theology',
-        'programmeImageUrl':  '../assets/img/programmes/theology.jpg',
+        'programmeImageUrl':  '../assets/img/programmes/theology1.jpg',
         'programme_description':[ 'General church History. This unit is designed to give an over view of history of the church from birth through Reformation(1517) to the present. An introduction of African church History with a focus in the activities of the missionaries in Africa',
                                   'World Religions. The unit is a survey of the major world religions with a greater emphasis on their origin and doctrinal positions.',
                                   'Christian education. The unit focuses on the development of education in the church with attentions being given to Sunday school, leadership training, children’s ministry, youth ministry, adult ministries and other related church ministries.',
@@ -28,7 +28,7 @@ export class ProgrammeData implements InMemoryDbService {
 
         'id': 2,
         'programmeName':'Certificate in Church Ministry',
-        'programmeImageUrl':  '../assets/img/programmes/theology.jpg',
+        'programmeImageUrl':  '../assets/img/programmes/theology1.jpg',
         'programme_description':[ ''],
         'programme_objectives': ['learn to preach','love God'],
         'programme_outcomes' : [],

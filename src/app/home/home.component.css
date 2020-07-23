@@ -2,6 +2,10 @@
   width:10%;
   height: 100px;
 } */
+div.carousel-caption > p {
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue; 
+  font-size: 1.3rem;
+}
 
 .news.col-lg-4 {
   background-color: #813531;
