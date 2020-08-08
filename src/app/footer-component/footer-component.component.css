@@ -17,8 +17,18 @@ section.footer-row {
   /* color: #f3e2e2; */
   color:#FFFFCC;  
 }
+
+
 .footer-cols ul li a {
     color: #FFFFCC;
+}
+
+h2.footer-title {
+  margin-top: 2rem;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #fff;
 }
 ul.footer-fonts{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

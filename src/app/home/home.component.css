@@ -44,13 +44,13 @@ div.media-body a:visited {
 }
 
 div.media-body a:hover {
-  color: #ffffff;
+  color: rgb(129, 53, 49);
   text-decoration: none;
   background-color: transparent;
 }
 
 div.media-body a:active {
-  color: green;
+  color:  #000;;
   text-decoration: none;
   background-color: transparent;
 }
@@ -62,7 +62,7 @@ div.card-deck hr {
 div.index_updates.col-lg-4, .testimonies {
   width: 100%;
   height: 10%;
-  background: #813531;
+  background: rgb(129, 53, 49);
   color: #bfbfbf;
   padding: 5px 1px 5px 0px;
   margin: 2px 0px 0px 2px;
@@ -76,7 +76,7 @@ div.apply_now .w-100 {
 div.index_campus_life{
   width: 100%;
   height: 2rem;
-  background: #813531;
+  background: rgb(129, 53, 49);
   color: #bfbfbf;
   padding: 5px 1px 5px 0px;
   margin: 2px 0px 0px 2px;
@@ -88,6 +88,12 @@ div.index_campus_life{
   line-height: 1.2;
 
 } */
+
+
+img#img_principle {
+    width: 25%;
+    margin: auto;
+}
 
 
 @media (max-width: 577.98px ){
@@ -140,7 +146,7 @@ div.index_campus_life{
 }
 img.img-fluid.card-img-top.mr-3 {
   width: 15%;
-  margin-left: 220px;
+  margin: auto;
 }
 
 
@@ -237,6 +243,10 @@ img.img-fluid.card-img-top.mr-3 {
     margin-left: 65px;
     width: 50%;
   }
+  img#img_principle {
+    width: 55%;
+    margin: auto;
+}
 
   a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
     color: #fff;
@@ -274,6 +284,10 @@ img.img-fluid.card-img-top.mr-3 {
   img.img-fluid.card-img-top.mr-3 {
     margin-left: 75px;
     width: 53%;
+  }
+  img#img_principle {
+    width: 55%;
+    margin: auto;
   }
 
 

@@ -2,6 +2,7 @@ import { InMemoryDbService } from 'angular-in-memory-web-api';
 
 //import { Product } from './pro';
 import { IProgramme } from 'src/app/programme/programme';
+import { IUpdates } from 'src/app/programme/programme';
 
 export class ProgrammeData implements InMemoryDbService {
 
@@ -10,7 +11,7 @@ export class ProgrammeData implements InMemoryDbService {
       {
         
         'id': 1,
-        'programmeName':'Diploma in Bibilical Theology',
+        'programmeName':'Diploma in Bibilical Theology and Theology',
         'programmeImageUrl':  '../assets/img/programmes/theology1.jpg',
         'programme_description':[ 'General church History. This unit is designed to give an over view of history of the church from birth through Reformation(1517) to the present. An introduction of African church History with a focus in the activities of the missionaries in Africa',
                                   'World Religions. The unit is a survey of the major world religions with a greater emphasis on their origin and doctrinal positions.',
@@ -19,7 +20,7 @@ export class ProgrammeData implements InMemoryDbService {
                                 ],
         'programme_objectives': [],
         'programme_outcomes' : [],
-        'programme_tuition': '300,000',
+        'programme_tuition': '165,000',
         'programme_duration': '2 years',
         'programme_distance_learning': '200000'
                                               
@@ -32,7 +33,7 @@ export class ProgrammeData implements InMemoryDbService {
         'programme_description':[ ''],
         'programme_objectives': ['learn to preach','love God'],
         'programme_outcomes' : [],
-        'programme_tuition': '300,000',
+        'programme_tuition': '115,000',
         'programme_duration': '2 years',
         'programme_distance_learning': '150000'
                                               
@@ -153,35 +154,7 @@ export class ProgrammeData implements InMemoryDbService {
         'programme_distance_learning': 'Null'
                                               
       },
-      {
 
-        'id': 7,
-        'programmeName':' Certificate in AgriBusness',
-        'programmeImageUrl':  '../assets/img/programmes/agric_business.jpg',
-        'programme_description':[ `
-                             This course is desiged to introduce students to the program of Agribusiness and help 
-                             them appreciate Agribusiness in today’s global economy. The course will equip students 
-                             with the knowledge and skills needed for keeping good records. Students will be
-                              taught about how to gather capital and recourses needed to start a business. 
-                              The class will discuss agribusiness at a global level and what opportunities and 
-                              risks are present in today’s global economy.`],
-        'programme_objectives': [
-                              'Introduce students to the opportunities and constraints in Agribusiness.',
-                              'Discuss the importance of records keeping.',
-                              'Explore the resources and capital needed for Agribusiness.',
-                              'Examine current issues in Agribusiness.'],
-        'programme_outcomes' : [
-                              'Discuss to the opportunities and constraints in Agribusiness.',
-                              'Describe the importance of records keeping.',
-                              'Apply knowledge and skills for recruiting resources and capital needed for Agribusiness.',
-                              'Discuss current issues in Agribusiness.'
-        ],
-        'programme_tuition': '495,000',
-        'programme_duration': '2 years',
-        'programme_distance_learning': 'Null'
-                                              
-      }
-      ,
       {
 
         'id': 8,
@@ -244,6 +217,34 @@ export class ProgrammeData implements InMemoryDbService {
         'programme_duration': '2 years',
         'programme_distance_learning': 'Null'
                                               
+      },
+      {
+
+        'id': 10 ,
+        'programmeName':' in Counseling and Guidance',
+        'programmeImageUrl':  '../assets/img/programmes/cousel_guidance.jpg',
+        'programme_description':[ `
+                                This course introduces the students to different situations
+                                araising from human relationship. use different skills and also develop human to human relationships. 
+                                It educates the student about the different counselling methods 
+                                                and mentoring types and their relevance to a variety of situations.`],
+        'programme_objectives': [
+                              'Introduce students to the basic concepts of counseling and guidance.',
+                              'Identify the Biblical concepts of counseling that will help listeners make wise choices.',
+                              'Explore ethical and professional counseling techniques.',
+                              'Discuss individual uniqueness and personalities and its role in counseling.',
+                              'Introduce normal and abnormal behavior coping strategies.',
+                              'Acquire skills in counseling persons who are seriously ill and facing death.'],
+        'programme_outcomes' : [
+                            'Demonstrate interest in community development as a generalist social work practice.',
+                            'Discuss human diversity in the political-economic, socio-cultural, and socio-ecological forces.',
+                            'Apply practical skills and knowledge of social development.',
+                            'Demonstrate an attitude and professional responsibility towards community development.',
+                            'Utilize the skills needed in evaluating the planned changes in local communities, organizations, institutions, and social action programs.'],
+        'programme_tuition': '393,000',
+        'programme_duration': '2 years',
+        'programme_distance_learning': 'Null'
+                                              
       }
 
       // ,
@@ -260,11 +261,15 @@ export class ProgrammeData implements InMemoryDbService {
       //   'programme_distance_learning': 'Null'
                                               
       // }
-      // {
-      //   'Id': 2,
-      //   'programmeName':'Diploma in Church Ministry'        
-      // }   
     ];
     return {  programmes };
-  }
+   }
+  // const updates: IUpdates[] = [
+  //   {
+  //     id: 1,
+  //     EventDate: ['20th this month'],
+  //     EventDetail: ['Registration is on']
+  //   }
+
+  // ]
 }

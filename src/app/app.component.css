@@ -1,4 +1,7 @@
 
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(0,0,0);
+}
 /******************************media query 320 px*********************/
 @media(max-width: 575.98px){
   header#header-edit {

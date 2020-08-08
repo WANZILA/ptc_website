@@ -1,5 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.min.css";
+/* You can add global styles to this file, and also import other style files
+@import "~bootstrap/dist/css/bootstrap.min.css"; */
 body {
     min-width: 250px;
     padding-right: 0px;
@@ -29,11 +29,19 @@ body {
     margin-left: auto;
 }
 
-h1.text-edit,h2.text-edit {
+h1.text-edit,h2.text-edit,h3.text-edit {
 	margin-top: 2rem;
     text-align: center;
     font-weight: 400;
     font-size:1.6rem;
+    text-transform: capitalize;
+}
+h3.text-edit3 {
+	margin-top: 2rem;
+    text-align: left;
+    font-weight: 400;
+    font-size:1rem;
+    text-transform: capitalize;
 }
 
 .card {
@@ -42,7 +50,7 @@ h1.text-edit,h2.text-edit {
 
 /**************navigation **************/
 .bg-light {
-    background-color: #813531!important;
+    background-color:rgba(129, 53, 49,1)!important;
     /* background-color: #8c1313; */
 }
 .navbar {

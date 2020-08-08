@@ -15,3 +15,9 @@ export interface ProgrammeResolved{
 	programme: IProgramme,
 	error?:any
 }
+
+export interface IUpdates{
+	id:number,
+	EventDate: string[],
+	EventDetail: string[],
+}
