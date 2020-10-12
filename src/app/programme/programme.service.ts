@@ -35,8 +35,8 @@ export class ProgrammeService{
             );
     }
 
-    getProgramme(programmeId: number): Observable<IProgramme> {
-        if ( programmeId === 0) {
+    getProgramme(programmeId: number | string): Observable<IProgramme> {
+        if ( programmeId === 0 || programmeId ==='') {
           return of(this.initializeProgramme());
         }
         const url = `${this.programmesUrl}/${programmeId}`;

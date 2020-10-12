@@ -5,3 +5,10 @@ div a.list-group-item.active {
     border-color: #343a40;
     background-color: #343a40;
 }
+a.selected {
+    background-color: RED;
+    color: white;
+  }
+a.selected:hover {
+    background-color: #BBD8DC;
+  }

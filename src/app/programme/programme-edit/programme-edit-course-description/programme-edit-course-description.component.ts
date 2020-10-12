@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./programme-edit-course-description.component.css']
 })
 export class ProgrammeEditCourseDescriptionComponent implements OnInit {
-    @ViewChild(NgForm,{static:false}) programmeForm:NgForm;
+    @ViewChild(NgForm) programmeForm:NgForm;
     
     // pageTitle = 'Programme Edit';
     errorMessage: string;  

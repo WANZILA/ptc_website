@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import{ HttpClientModule } from '@angular/common/http';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+// import { BrowserAnimationModule } from '@angular/platform-browser/animations';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -27,6 +29,7 @@ import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
+    // BrowserAnimationsModule,
     AppComponent,
     HomeComponent,
     PageNotFoundComponent,
@@ -37,8 +40,10 @@ import { SharedModule } from './shared/shared.module';
     ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
-    InMemoryWebApiModule.forRoot(ProgrammeData, { delay: 1000 }),
+    InMemoryWebApiModule.forRoot(ProgrammeData, { delay: 0 }),
     //  HttpClientInMemoryWebApiModule.forRoot(
     //    InMemoryDataService,{ dataEncapsulation: false}
     //  ),   

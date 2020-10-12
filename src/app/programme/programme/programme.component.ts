@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { ProgrammeService } from '../programme.service';
-// import { switchMap } from 'rxjs/operators';
-// import { ActivatedRoute } from '@angular/router';
+import { switchMap } from 'rxjs/operators';
+import { ActivatedRoute } from '@angular/router';
 
 
 import { IProgramme } from '../programme';
@@ -18,6 +18,9 @@ import { IProgramme } from '../programme';
 export class ProgrammeComponent implements OnInit {
   
   programmes: IProgramme[] =[];
+
+  programmes2$:Observable<IProgramme[]>
+  selectedId: number;
   
   filteredProgrammes: IProgramme[];
   // programmes$: Observable<Programme[]>;
@@ -40,6 +43,7 @@ export class ProgrammeComponent implements OnInit {
   //setting default values
   constructor(
     private programmeService: ProgrammeService,
+    private route: ActivatedRoute
         
     ) { 
       
@@ -54,7 +58,15 @@ export class ProgrammeComponent implements OnInit {
             },
             error: err => this.errorMessage = err
           });
-      }
+
+          this.programmes2$ = this.route.paramMap.pipe(
+              switchMap(params =>{
+                //(+)  before 'params.get()' turns the string nio a number
+                this.selectedId = +params.get('id');
+                return this.programmeService.getProgrammes();
+              })
+                );
+  }
       
   performFilter(filterBy: string): IProgramme[] { 
       filterBy = filterBy.toLocaleLowerCase();

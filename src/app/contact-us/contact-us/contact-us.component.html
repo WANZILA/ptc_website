@@ -2,57 +2,141 @@
 frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
 <div class="container">
+    <section class="row">
+        <div class="col-sm-12 col-md-12">
+            <p class="text-justify">
+                We are here to answer any question you may have about college experience.
+                 Reach out to us and we will respond as soon as possible. Even if there is something you have always 
+                 wanted to experience and is not indicated, let us know and we promise we will do our best to provide 
+                 you with relevant information
+            </p>
+        </div>
+    </section>
             
     <section class="row">
-            <div class="col-sm-12 col-md-12" >
+        
+            <div class="col-sm-12 col-md-6"  style="margin: 0px auto;">
                
-                        <p class="text-justify">
-                            We are here to answer any question you may have about college experience.
-                             Reach out to us and we will respond as soon as possible. Even if there is something you have always 
-                             wanted to experience and is not indicated, let us know and we promise we will do our best to provide 
-                             you with relevant information
-                        </p>
-                     <h2 class="text-edit">What is your Question? </h2> 
-                     <form>
-                         <div class="form-group row">
-                             <label for="full_names" class="col-lg-2 col-form-label">Full Names</label>
-                             <div class="col-lg-10">
-                                 <input type="text" class="form-control" id="name" required>
-                             </div>
+                       <!-- {{diagnostic}}  -->
+                     
+                     <div [hidden]="submitted">
+                        <form [formGroup]="FormData"
+                            (ngSubmit)="onSubmit(FormData.value)"
+                            >
+                            
+                            <fieldset>
+                                <legend><h2 class="text-edit">What is your Question? </h2> </legend>
+                                <div class="form-group row">
+                                    <label for="names" class="col-lg-4 col-form-label">Full Names</label>
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control ng-untouched ng-pristine ng-valid" 
+                                           id="names"
+                                           name="names" 
+                                           formControlName="names" 
+                                           required
+                                        >
+                                       <!-- <div [hidden]="names.valid || names.pristine"
+                                           class="alert alert-danger"
+                                        > Name required
+                                       </div> -->
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                   <label for="phone" class="col-lg-4 col-form-label">Phone Number</label>
+                                   <div class="col-lg-3">
+                                       <select class="form-control ng-untouched ng-pristine ng-valid" 
+                                        id= "countryCode"  
+                                        required
+                                        formControlName ="countryCode" 
+                                        name="countryCode"
+                                        >
+                                           <option *ngFor="let country of countryCodes" [value]="country">{{country}}</option>
+                                       </select> 
+                                       <!-- <div [hidden]="countryCode.valid || countryCode.pristine"
+                                       class="alert alert-danger" >
+                                           Country Code required
+                                       </div>     -->
+                                   </div>
+                                   <div class="col-lg-5">                                                    
+                                       <input type="text" class="form-control ng-untouched ng-pristine ng-valid"
+                                         id="phone" maxlength="10" 
+                                         required
+                                         name="phone"
+                                        formControlName ="phone" 
+                                           
+                                       >
+                                       <!-- <div [hidden]="phone.valid ||phone.pristine"
+                                       class="alert alert-danger">
+                                           Phone required
+                                       </div> -->
+                                   </div>
+                               </div> 
+        
+                               <div class="form-group row">
+                                    <label for="email"  class="col-lg-4 col-form-label">Email</label>
+                                    <div class="col-lg-8">
+                                        <input type="email" class="form-control ng-untouched ng-pristine ng-valid" 
+                                            id="email" 
+                                             required
+                                             name="email"
+                                            formControlName="email"
+                                            >
+                                        <!-- <div [hidden]="email.valid || email.pristine"
+                                            class="alert alert-danger">
+                                                Email required
+                                        </div> -->
+                                    </div>
+                                </div>
+        
+                                 <div class="form-group row">
+                                     <label for="question" class="col-lg-4 col-form-label">Question</label>
+                                     <div class="col-lg-8">
+                                            <textarea class="form-control ng-untouched ng-pristine ng-valid" 
+                                                id="question"  rols=3 col=2 required
+                                                name="question" 
+                                                formControlName="question"
+                                            >
+                                            </textarea>
+                                           <!-- <div [hidden]="question.valid || question.pristine"
+                                                class="alert alert-danger"
+                                           >Whats your question
+                                           </div> -->
+                                     </div>                                         
+                                 </div>
+                                 <div class="form-group row">
+                                     <div class="col-lg-10">
+                                         <button type="submit" 
+                                         class="btn btn-success"
+                                         [disabled]="!FormData.valid">Submit</button>
+                                     </div>
+                                 </div>   
+                            </fieldset>                              
+                        </form>
+                     </div> 
+
+                     <!-- <div [hidden]="!submitted">
+                         <h2> You submitted the following:</h2>
+                         <div class="row">
+                             <div class="col-xs-3"><b>Name:</b></div>
+                             <div class="col-xs-9"> {{contact.names}}</div>
                          </div>
-                              
-                         <div class="form-group row">
-                             <label for="email"  class="col-lg-2 col-form-label">Email</label>
-                             <div class="col-lg-10">
-                                 <input type="email" class="form-control" id="email" required>
-                                  </div>
-                              </div>
+                         <div class="row">
+                            <div class="col-xs-3"><b>Phone:</b></div>
+                            <div class="col-xs-9"> {{contact.phone}}</div> 
+                         </div>
+                         <div class="row">
+                            <div class="col-xs-3"><b>Email:</b></div>
+                            <div class="col-xs-9"> {{contact.email}}</div> 
+                         </div>
+                         <div class="row">
+                            <div class="col-xs-3"><b>Question:</b></div>
+                            <div class="col-xs-9"> {{contact.question}}</div> 
+                         </div>
+                         <button class="btn btn-primary" (click)="submitted=false">Edit</button>     
+                        
+                     </div> -->
 
-                              <div class="form-group row">
-                                  <label for="question" class="col-lg-2 col-form-label">Question</label>
-                                  <div class="col-lg-10">
-                                         <textarea class="form-control" id="question"  rols=3 col=2 required>
-                                         </textarea>
-                                  </div>                                         
-                              </div>
-                              <div class="form-group row">
-                                  <div class="col-lg-10">
-                                      <button type="submit" class="btn btn-primary">Submit</button>
-                                  </div>
-                              </div>
-
-                              
-                     </form>
-                     <!-- <h2 class="text-edit"> Reach us  </h2> 
-                     <address  class="text-center address-fonts">
-                            P.O BOX 149 Mbale, Uganda<br>
-                            Office: +256-392178417<br>
-                            Registrar: +256-774 397571<br>
-                            Principal: +256772313749<br>
-                            Principal: +256772313749<br>
-                            Academic Dean: +256-752367144<br>
-                            Email: ptheocombale23@gmail.com<br>
-                     </address>    -->
+                     
             </div>               
            
     
@@ -61,3 +145,83 @@ frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 </div>
 
 
+<!--                         <form action="mailto:wanzilro@gmail.com" method="POST"
+                            enctype="multipart/form-data"
+                            name="EmailForm"
+                            (ngSubmit)="onSubmit()" #contactForm="ngForm">
+                            
+                            <fieldset>
+                                <legend><h2 class="text-edit">What is your Question? </h2> </legend>
+                                <div class="form-group row">
+                                    <label for="names" class="col-lg-4 col-form-label">Full Names</label>
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control ng-untouched ng-pristine ng-valid" id="names" required
+                                           [(ngModel)]="contact.names" name="names"
+                                           #names="ngModel"
+                                        >
+                                       <div [hidden]="names.valid || names.pristine"
+                                           class="alert alert-danger"
+                                        > Name required
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                   <label for="phone" class="col-lg-4 col-form-label">Phone Number</label>
+                                   <div class="col-lg-3">
+                                       <select class="form-control ng-untouched ng-pristine ng-valid" id= "countryCode"  required
+                                        [(ngModel)] ="contact.countryCode" name="countryCode"
+                                        #countryCode="ngModel"
+                                        >
+                                           <option *ngFor="let country of countryCodes" [value]="country">{{country}}</option>
+                                       </select> 
+                                       <div [hidden]="countryCode.valid || countryCode.pristine"
+                                       class="alert alert-danger" >
+                                           Country Code required
+                                       </div>    
+                                   </div>
+                                   <div class="col-lg-5">                                                    
+                                       <input type="text" class="form-control ng-untouched ng-pristine ng-valid" id="phone" maxlength="10" required
+                                           [(ngModel)] ="contact.phone" name="phone"
+                                           #phone="ngModel"
+                                       >
+                                       <div [hidden]="phone.valid ||phone.pristine"
+                                       class="alert alert-danger">
+                                           Phone required
+                                       </div>
+                                   </div>
+                               </div> 
+        
+                               <div class="form-group row">
+                                    <label for="email"  class="col-lg-4 col-form-label">Email</label>
+                                    <div class="col-lg-8">
+                                        <input type="email" class="form-control ng-untouched ng-pristine ng-valid" id="email" required
+                                        [(ngModel)]="contact.email" name="email"
+                                        #email="ngModel"
+                                        >
+                                        <div [hidden]="email.valid || email.pristine"
+                                            class="alert alert-danger">
+                                                Email required
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                 <div class="form-group row">
+                                     <label for="question" class="col-lg-4 col-form-label">Question</label>
+                                     <div class="col-lg-8">
+                                            <textarea class="form-control ng-untouched ng-pristine ng-valid" id="question"  rols=3 col=2 required
+                                            [(ngModel)] ="contact.question" name="question"
+                                            #question="ngModel">
+                                            </textarea>
+                                           <div [hidden]="question.valid || question.pristine"
+                                                class="alert alert-danger"
+                                           >Whats your question
+                                           </div>
+                                     </div>                                         
+                                 </div>
+                                 <div class="form-group row">
+                                     <div class="col-lg-10">
+                                         <button type="submit" class="btn btn-success" [disabled]="!contactForm.form.valid">Submit</button>
+                                     </div>
+                                 </div>   
+                            </fieldset>                              
+                        </form> -->

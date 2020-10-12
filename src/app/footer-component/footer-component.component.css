@@ -1,4 +1,5 @@
 
+
 h3.text-edit {
   margin-top: 10px;
   text-align: center;
@@ -21,6 +22,7 @@ section.footer-row {
 
 .footer-cols ul li a {
     color: #FFFFCC;
+    font-family: sans-serif;
 }
 
 h2.footer-title {

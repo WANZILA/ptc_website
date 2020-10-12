@@ -15,10 +15,13 @@ const routes: Routes = [
       {
         path: '', 
         component: ProgrammeComponent,
+        // data:{ animation: 'programmes'}
       },
       {
         path: ':programmeId', component: ProgrammeDetailComponent,
+        // data:{ animation: 'programme'},
         resolve:{ resolvedData: ProgrammeResolver}
+
       },
       {
         path: ':programmeId/edit', component: ProgrammeEditComponent,

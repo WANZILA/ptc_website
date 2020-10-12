@@ -6,6 +6,7 @@ import { StudentLifeComponent } from './student-life/student-life.component';
 import { StudentDashboardRoutingModule } from './student-dashboard-routing.module';
 import { ApplicationProcedureComponent } from './application-procedure/application-procedure.component';
 import { ArMessageComponent } from './ar-message/ar-message.component';
+import { IntakesComponent } from './intakes/intakes.component';
 
 
 
@@ -13,7 +14,8 @@ import { ArMessageComponent } from './ar-message/ar-message.component';
   declarations: [
     StudentLifeComponent,
     ApplicationProcedureComponent,
-    ArMessageComponent
+    ArMessageComponent,
+    IntakesComponent
   ],
   imports: [
     CommonModule,

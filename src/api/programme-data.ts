@@ -11,7 +11,7 @@ export class ProgrammeData implements InMemoryDbService {
       {
         
         'id': 1,
-        'programmeName':'Diploma in Bibilical Theology and Theology',
+        'programmeName':'Diploma in Bible and  Theology',
         'programmeImageUrl':  '../assets/img/programmes/theology1.jpg',
         'programme_description':[ 'General church History. This unit is designed to give an over view of history of the church from birth through Reformation(1517) to the present. An introduction of African church History with a focus in the activities of the missionaries in Africa',
                                   'World Religions. The unit is a survey of the major world religions with a greater emphasis on their origin and doctrinal positions.',
@@ -22,7 +22,7 @@ export class ProgrammeData implements InMemoryDbService {
         'programme_outcomes' : [],
         'programme_tuition': '165,000',
         'programme_duration': '2 years',
-        'programme_distance_learning': '200000'
+        'programme_distance_learning': '200,000'
                                               
       },
       {
@@ -35,7 +35,7 @@ export class ProgrammeData implements InMemoryDbService {
         'programme_outcomes' : [],
         'programme_tuition': '115,000',
         'programme_duration': '2 years',
-        'programme_distance_learning': '150000'
+        'programme_distance_learning': '115,500'
                                               
       },
       {
@@ -89,7 +89,7 @@ export class ProgrammeData implements InMemoryDbService {
                             'Utilize the skills and knowledge of ICT for self-employment.',
                             'Demonstrate creativity in the development of ICT-based applications.'
         ],
-        'programme_tuition': '495,000',
+        'programme_tuition': '346,000',
         'programme_duration': '1 year',
         'programme_distance_learning': 'Null'
                                               
@@ -221,7 +221,7 @@ export class ProgrammeData implements InMemoryDbService {
       {
 
         'id': 10 ,
-        'programmeName':' in Counseling and Guidance',
+        'programmeName':'Certificate in Counseling and Guidance',
         'programmeImageUrl':  '../assets/img/programmes/cousel_guidance.jpg',
         'programme_description':[ `
                                 This course introduces the students to different situations
@@ -241,8 +241,8 @@ export class ProgrammeData implements InMemoryDbService {
                             'Apply practical skills and knowledge of social development.',
                             'Demonstrate an attitude and professional responsibility towards community development.',
                             'Utilize the skills needed in evaluating the planned changes in local communities, organizations, institutions, and social action programs.'],
-        'programme_tuition': '393,000',
-        'programme_duration': '2 years',
+        'programme_tuition': '275,000',
+        'programme_duration': '1 year',
         'programme_distance_learning': 'Null'
                                               
       }

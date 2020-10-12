@@ -4,7 +4,7 @@
          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="../../assets/img/about/history2.jpg" alt="Graduate receives transcript">
+              <img class="d-block w-100" src="../../assets/img/index/apply1.jpg" alt="Graduate receives transcript">
               <h1 class="text-edit"> Pentecostal Theological College Programmes </h1> 
               <p class="text-justify">
                   All our courses are accredited by the National council for Higher 
@@ -29,7 +29,7 @@
     <div class="col-12">
         <div class="row ">
 
-			<aside class="col-lg-3">
+			<aside class="col-lg-2">
 				<div class="list-group" id="list-tab" role="tablist">
           <a class="list-group-item list-group-item-action active" id ="list-home-list" data-toggle="list" href="#"
 					   role="tab" aria-controls="all" (click)="onClickAll()">All</a>
@@ -41,7 +41,7 @@
 				</div>
 
 			</aside>
-            <main class="col-lg-9">
+            <main class="col-lg-10">
                 <section class="row rowEdit">
                     <!-- <div class="col-12" >
                         <div class="tab-content" id="nav-tab-content">
@@ -82,19 +82,21 @@
                           <tr *ngFor="let programme of filteredProgrammes">
                             <td> 
                               <!-- <a [routerLink]="['/programmes', programme.programmeId]"> -->
-                                <a [routerLink]="['/programmes', programme.id]">
+                                <a [class.selected]="programme.id === selectedId" [routerLink]="['/programmes', programme.id]">
                                 {{programme.programmeName}}
                               </a>
                             </td>
                             <td>{{programme.programme_duration}}</td>
                             <td>{{programme.programme_tuition}}</td>  
                             <td>{{programme.programme_distance_learning}}</td>  
-                            <td><a [routerLink]="['/programmes', programme.id, 'edit']">Edit</a> </td>             
+                            <!-- <td><a [routerLink]="['/programmes', programme.id, 'edit']">Edit</a> </td>              -->
                           </tr>
                         </tbody>
                       </table>
                       <h2 class="text-edit">FUNCTIONAL FEES</h2>
-                      <a  href="../../../assets/FeesStructure.pdf"> Functional fees</a> per Semester
+                      <a  href="../../../assets/full-timeFEES-STRUCTURE.pdf"> Full-time Functional fees</a> per Semester<br>
+                      <a  href="../../../assets/Modular-Fees Structure.pdf"> Modular Functional fees</a> per Semester
+
 
                       <h2 class="text-edit">ENTRY REQUIREMENTS</h2>
                           <h3 class="text-edit3">For  Diploma</h3>                    

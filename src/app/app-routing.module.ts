@@ -17,15 +17,16 @@ const routes: Routes = [
 	  
 	//  /*  loadChildren: './products/product.module#ProductModule'},*/
   // },
-  {
-    path: '' , redirectTo: 'home', pathMatch:'full'
-  },
+  
   {
     path: 'programmes',
     data: { preload: true },
     loadChildren: () =>
       import('./programme/programme.module')
         .then(m => m.ProgrammeModule)
+  },
+  {
+    path: '' , redirectTo: '/home', pathMatch:'full'
   },
   {
     path: '**', component: PageNotFoundComponent

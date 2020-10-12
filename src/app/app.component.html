@@ -13,10 +13,10 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav  mr-auto">
                   <li class="nav-item active">
-                    <a class="nav-link" [routerLink]="['/home']" >Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active" >Home <span class="sr-only">(current)</span></a>
                   </li> 
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" id="mouseenter" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" id="mouseenter" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLinkActive="active">
                       About
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -34,13 +34,21 @@
                   </li>
     
                   <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle"   id="serviceDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a href="#" class="nav-link dropdown-toggle"   id="serviceDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLinkActive="active">
                       Services 
                     </a>
                     <div class="dropdown-menu " aria-labelledby="serviceDropdown">
+                        <span> Student Services</span>
                         <div classs="list-group"  >
                             <a  class="dropdown-item" role="button"  [routerLink]="['/library']"   routerLinkActive="active" >Library</a>
                         </div>
+                        <span> Community Services</span>
+                        <div classs="list-group"  >
+                            <a  class="dropdown-item" role="button"  [routerLink]="['/groundHire']"   routerLinkActive="active" >Hire grounds</a>
+                        </div>
+                        <div classs="list-group"  >
+                          <a  class="dropdown-item" role="button"  [routerLink]="['/WebDevelopment']"   routerLinkActive="active" >Web Design and Development</a>
+                      </div>
                     </div>
                   </li>
     
@@ -57,9 +65,13 @@
           </header>
         
        
+<!--  
+<div [@routeAnimation]="getAnimationsData(routerOutlet)" class="container-fluid">
+  <router-outlet #routerOutlet="outlet" ></router-outlet>
+</div> -->
  
-<div class="container-fluid">
-  <router-outlet></router-outlet>
+<div  class="container-fluid">
+  <router-outlet ></router-outlet>
 </div>
 
 <footer class="container-fluid">
