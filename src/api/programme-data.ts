@@ -90,7 +90,7 @@ export class ProgrammeData implements InMemoryDbService {
                             'Demonstrate creativity in the development of ICT-based applications.'
         ],
         'programme_tuition': '346,000',
-        'programme_duration': '1 year',
+        'programme_duration': '2 years',
         'programme_distance_learning': 'Null'
                                               
       },
@@ -242,10 +242,93 @@ export class ProgrammeData implements InMemoryDbService {
                             'Demonstrate an attitude and professional responsibility towards community development.',
                             'Utilize the skills needed in evaluating the planned changes in local communities, organizations, institutions, and social action programs.'],
         'programme_tuition': '275,000',
-        'programme_duration': '1 year',
+        'programme_duration': '2 years',
+        'programme_distance_learning': 'Null'
+                                              
+      },
+      {
+
+        'id': 11 ,
+        'programmeName':'National Diploma in Secretarial & Information Management',
+        'programmeImageUrl':  '../assets/img/programmes/theology.jpg',
+        'programme_description':[ ''],
+        'programme_objectives': [],
+        'programme_outcomes' : [],
+        'programme_tuition': '',
+        'programme_duration': '2 years',
         'programme_distance_learning': 'Null'
                                               
       }
+      ,
+      {
+
+        'id': 12 ,
+        'programmeName':'National Certificate in Secretarial & Information Management',
+        'programmeImageUrl':  '../assets/img/programmes/theology.jpg',
+        'programme_description':[ ''],
+        'programme_objectives': [],
+        'programme_outcomes' : [],
+        'programme_tuition': '',
+        'programme_duration': '2 years',
+        'programme_distance_learning': 'Null'
+                                              
+      }
+      ,
+      {
+
+        'id': 13 ,
+        'programmeName':'National Diploma in Information $ Communication Technology',
+        'programmeImageUrl':  '../assets/img/programmes/theology.jpg',
+        'programme_description':[ ''],
+        'programme_objectives': [],
+        'programme_outcomes' : [],
+        'programme_tuition': '',
+        'programme_duration': '2 years',
+        'programme_distance_learning': 'Null'
+                                              
+      }
+      ,
+      {
+
+        'id': 14 ,
+        'programmeName':'National Certificate in Information $ Communication Technology',
+        'programmeImageUrl':  '../assets/img/programmes/theology.jpg',
+        'programme_description':[ ''],
+        'programme_objectives': [],
+        'programme_outcomes' : [],
+        'programme_tuition': '',
+        'programme_duration': '2 years',
+        'programme_distance_learning': 'Null'
+                                              
+      },
+      {
+
+        'id': 15 ,
+        'programmeName':'National Diploma in Secretarial & Information Management',
+        'programmeImageUrl':  '../assets/img/programmes/theology.jpg',
+        'programme_description':[ ''],
+        'programme_objectives': [],
+        'programme_outcomes' : [],
+        'programme_tuition': '',
+        'programme_duration': '2 years',
+        'programme_distance_learning': 'Null'
+                                              
+      },
+      {
+
+        'id': 16 ,
+        'programmeName':'National Certificate in Secretarial & Information Management',
+        'programmeImageUrl':  '../assets/img/programmes/theology.jpg',
+        'programme_description':[ ''],
+        'programme_objectives': [],
+        'programme_outcomes' : [],
+        'programme_tuition': '',
+        'programme_duration': '2 years',
+        'programme_distance_learning': 'Null'
+                                              
+      }
+      
+
 
       // ,
       // {
